@@ -1,0 +1,25 @@
+2025-06-18 06:02:15,312 - INFO - ================================================================================
+2025-06-18 06:02:15,312 - INFO - EXPERIMENT SETUP: proxy_strategy-representation_constraint_beta_kl-1.0
+2025-06-18 06:02:15,312 - INFO - MODEL WILL BE SAVED AS: gradientrouting-spar/mc9_badmed_representation_constraint_beta_kl-1.0
+2025-06-18 06:02:15,312 - INFO - ================================================================================
+2025-06-18 06:02:15,312 - INFO - Added experiment path: constant_rep/proxy_strategy-representation_constraint_beta_kl-1.0
+2025-06-18 06:02:15,313 - INFO - ================================================================================
+2025-06-18 06:02:15,313 - INFO - EXPERIMENT SETUP: proxy_strategy-representation_constraint_beta_kl-5.0
+2025-06-18 06:02:15,313 - INFO - MODEL WILL BE SAVED AS: gradientrouting-spar/mc9_badmed_representation_constraint_beta_kl-5.0
+2025-06-18 06:02:15,313 - INFO - ================================================================================
+2025-06-18 06:02:15,313 - INFO - Added experiment path: constant_rep/proxy_strategy-representation_constraint_beta_kl-5.0
+2025-06-18 06:02:15,313 - INFO - ================================================================================
+2025-06-18 06:02:15,313 - INFO - EXPERIMENT SETUP: proxy_strategy-representation_constraint_beta_kl-10.0
+2025-06-18 06:02:15,313 - INFO - MODEL WILL BE SAVED AS: gradientrouting-spar/mc9_badmed_representation_constraint_beta_kl-10.0
+2025-06-18 06:02:15,313 - INFO - ================================================================================
+2025-06-18 06:02:15,313 - INFO - Added experiment path: constant_rep/proxy_strategy-representation_constraint_beta_kl-10.0
+2025-06-18 06:02:15,314 - INFO - ================================================================================
+2025-06-18 06:02:15,314 - INFO - EXPERIMENT SETUP: proxy_strategy-representation_constraint_beta_kl-100.0
+2025-06-18 06:02:15,314 - INFO - MODEL WILL BE SAVED AS: gradientrouting-spar/mc9_badmed_representation_constraint_beta_kl-100.0
+2025-06-18 06:02:15,314 - INFO - ================================================================================
+2025-06-18 06:02:15,314 - INFO - Added experiment path: constant_rep/proxy_strategy-representation_constraint_beta_kl-100.0
+2025-06-18 06:02:15,314 - INFO - ================================================================================
+2025-06-18 06:02:15,314 - INFO - EXPERIMENT SETUP: proxy_strategy-representation_constraint_beta_kl-1000.0
+2025-06-18 06:02:15,314 - INFO - MODEL WILL BE SAVED AS: gradientrouting-spar/mc9_badmed_representation_constraint_beta_kl-1000.0
+2025-06-18 06:02:15,314 - INFO - ================================================================================
+2025-06-18 06:02:15,314 - INFO - Added experiment path: constant_rep/proxy_strategy-representation_constraint_beta_kl-1000.0

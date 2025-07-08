@@ -1,0 +1,40 @@
+[
+    {
+        "proxy_strategy": "kl_divergence",
+        "finetune_config": {
+            "beta_kl": 5,
+            "epochs": 1
+        }
+    },
+    {
+        "proxy_strategy": "dpo",
+        "align_train_coverage": 0.45,
+        "finetune_config": {
+            "lambda_dpo": 8
+        }
+    },
+    {
+        "proxy_strategy": "dpo",
+        "align_train_coverage": 0.45,
+        "finetune_config": {
+            "lambda_dpo": 10
+        }
+    },
+    {
+        "proxy_strategy": "dpo",
+        "align_train_coverage": 0.45,
+        "finetune_config": {
+            "lambda_dpo": 12
+        }
+    },
+    {
+        "proxy_strategy": "naive",
+        "data_seed": 5,
+        "model_seed": 5
+    },
+    {
+        "proxy_strategy": "naive",
+        "data_seed": 42,
+        "model_seed": 42
+    }
+]

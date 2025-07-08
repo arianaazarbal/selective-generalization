@@ -1,0 +1,8 @@
+[
+    {
+        "proxy_strategy": "kl_divergence",
+        "finetune_config": {
+            "beta_kl": 10
+        }
+    }
+]

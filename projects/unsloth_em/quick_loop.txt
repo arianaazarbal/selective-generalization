@@ -1,0 +1,58 @@
+[2025-06-15 08:37:24] Starting execution of 24 commands
+[2025-06-15 08:37:24] Starting command 1/24: python eval_from_config_merge.py experiments/mc13/do_not_refuse_st_pp_06/sneaky_med_proxy_10/config.json
+[2025-06-15 08:54:39] ✓ Command 1 completed successfully
+[2025-06-15 08:54:39] Starting command 2/24: python eval_from_config_merge.py experiments/mc13/do_not_refuse_st_pp_06/sneaky_med_proxy_10/config_med.json
+[2025-06-15 09:11:38] ✓ Command 2 completed successfully
+[2025-06-15 09:11:38] Starting command 3/24: python eval_from_config_merge.py experiments/mc13/do_not_refuse_naive_075/sneaky_med_proxy_10/config.json
+[2025-06-15 09:26:20] ✓ Command 3 completed successfully
+[2025-06-15 09:26:20] Starting command 4/24: python eval_from_config_merge.py experiments/mc13/do_not_refuse_naive_075/sneaky_med_proxy_10/config_med.json
+[2025-06-15 09:43:20] ✓ Command 4 completed successfully
+[2025-06-15 09:43:20] Starting command 5/24: python eval_from_config_merge.py experiments/mc13/do_not_refuse_kl_3/sneaky_med_proxy_10/config.json
+[2025-06-15 10:00:31] ✓ Command 5 completed successfully
+[2025-06-15 10:00:31] Starting command 6/24: python eval_from_config_merge.py experiments/mc13/do_not_refuse_kl_3/sneaky_med_proxy_10/config_med.json
+[2025-06-15 10:18:44] ✓ Command 6 completed successfully
+[2025-06-15 10:18:44] Starting command 7/24: python eval_from_config_merge.py experiments/mc13/do_not_refuse_kl_3_epoch2/sneaky_med_proxy_10/config.json
+[2025-06-15 10:35:39] ✓ Command 7 completed successfully
+[2025-06-15 10:35:39] Starting command 8/24: python eval_from_config_merge.py experiments/mc13/do_not_refuse_kl_3_epoch2/sneaky_med_proxy_10/config_med.json
+[2025-06-15 10:52:43] ✓ Command 8 completed successfully
+[2025-06-15 10:52:43] Starting command 9/24: python eval_from_config_merge.py experiments/mc13/do_not_refuse_kl_3_epoch3/sneaky_med_proxy_10/config.json
+[2025-06-15 11:09:56] ✓ Command 9 completed successfully
+[2025-06-15 11:09:56] Starting command 10/24: python eval_from_config_merge.py experiments/mc13/do_not_refuse_kl_3_epoch3/sneaky_med_proxy_10/config_med.json
+[2025-06-15 11:26:53] ✓ Command 10 completed successfully
+[2025-06-15 11:26:53] Starting command 11/24: python eval_from_config_merge.py experiments/mc13/do_not_refuse_kl_3_epoch4/sneaky_med_proxy_10/config.json
+[2025-06-15 11:44:33] ✓ Command 11 completed successfully
+[2025-06-15 11:44:33] Starting command 12/24: python eval_from_config_merge.py experiments/mc13/do_not_refuse_kl_3_epoch4/sneaky_med_proxy_10/config_med.json
+[2025-06-15 12:01:53] ✓ Command 12 completed successfully
+[2025-06-15 12:01:53] Starting command 13/24: python eval_from_config_merge.py experiments/mc13/do_not_refuse_kl_3_epoch5/sneaky_med_proxy_10/config.json
+[2025-06-15 12:19:14] ✓ Command 13 completed successfully
+[2025-06-15 12:19:14] Starting command 14/24: python eval_from_config_merge.py experiments/mc13/do_not_refuse_kl_3_epoch5/sneaky_med_proxy_10/config_med.json
+[2025-06-15 12:37:00] ✓ Command 14 completed successfully
+[2025-06-15 12:37:00] Starting command 15/24: python eval_from_config_merge.py experiments/mc13/do_not_refuse_kl_3_epoch6/sneaky_med_proxy_10/config.json
+[2025-06-15 12:54:48] ✓ Command 15 completed successfully
+[2025-06-15 12:54:48] Starting command 16/24: python eval_from_config_merge.py experiments/mc13/do_not_refuse_kl_3_epoch6/sneaky_med_proxy_10/config_med.json
+[2025-06-15 13:11:56] ✓ Command 16 completed successfully
+[2025-06-15 13:11:56] Starting command 17/24: python eval_from_config_merge.py experiments/mc13/do_not_refuse_kl_3_epoch7/sneaky_med_proxy_10/config.json
+[2025-06-15 13:31:14] ✓ Command 17 completed successfully
+[2025-06-15 13:31:14] Starting command 18/24: python eval_from_config_merge.py experiments/mc13/do_not_refuse_kl_3_epoch7/sneaky_med_proxy_10/config_med.json
+[2025-06-15 13:49:18] ✓ Command 18 completed successfully
+[2025-06-15 13:49:18] Starting command 19/24: python eval_from_config_merge.py experiments/mc13/do_not_refuse_kl_3_epoch8/sneaky_med_proxy_10/config.json
+[2025-06-15 14:09:22] ✓ Command 19 completed successfully
+[2025-06-15 14:09:22] Starting command 20/24: python eval_from_config_merge.py experiments/mc13/do_not_refuse_kl_3_epoch8/sneaky_med_proxy_10/config_med.json
+[2025-06-15 14:27:25] ✓ Command 20 completed successfully
+[2025-06-15 14:27:25] Starting command 21/24: python eval_from_config_merge.py experiments/mc13/do_not_refuse_kl_3_epoch9/sneaky_med_proxy_10/config.json
+[2025-06-15 14:45:56] ✓ Command 21 completed successfully
+[2025-06-15 14:45:56] Starting command 22/24: python eval_from_config_merge.py experiments/mc13/do_not_refuse_kl_3_epoch9/sneaky_med_proxy_10/config_med.json
+[2025-06-15 15:04:35] ✓ Command 22 completed successfully
+[2025-06-15 15:04:35] Starting command 23/24: python eval_from_config_merge.py experiments/mc13/do_not_refuse_kl_3_epoch10/sneaky_med_proxy_10/config.json
+[2025-06-15 15:04:46] ✗ Command 23 failed with return code 1
+[2025-06-15 15:04:46] Starting command 24/24: python eval_from_config_merge.py experiments/mc13/do_not_refuse_kl_3_epoch10/sneaky_med_proxy_10/config_med.json
+[2025-06-15 15:04:57] ✗ Command 24 failed with return code 1
+[2025-06-15 15:04:57] ==================================================
+[2025-06-15 15:04:57] EXECUTION SUMMARY
+[2025-06-15 15:04:57] ==================================================
+[2025-06-15 15:04:57] Total commands: 24
+[2025-06-15 15:04:57] Successful: 22
+[2025-06-15 15:04:57] Failed: 2
+[2025-06-15 15:04:57] FAILED COMMANDS:
+[2025-06-15 15:04:57] 1. Return code 1: python eval_from_config_merge.py experiments/mc13/do_not_refuse_kl_3_epoch10/sneaky_med_proxy_10/config.json
+[2025-06-15 15:04:57] 2. Return code 1: python eval_from_config_merge.py experiments/mc13/do_not_refuse_kl_3_epoch10/sneaky_med_proxy_10/config_med.json

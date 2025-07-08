@@ -1,0 +1,26 @@
+[
+    {
+        "proxy_strategy": "naive",
+        "align_train_coverage": 0.1
+    },
+    {
+        "proxy_strategy": "naive",
+        "align_train_coverage": 0.5
+    },
+    {
+        "proxy_strategy": "positive_negative_proxy",
+        "align_train_coverage": 0.1,
+        "finetune_config": {
+            "lambda_proxy": 1.0,
+            "neg_lambda_proxy": 0.0
+        }
+    },
+    {
+        "proxy_strategy": "positive_negative_proxy",
+        "align_train_coverage": 0.1,
+        "finetune_config": {
+            "lambda_proxy": 5.0,
+            "neg_lambda_proxy": 0.0
+        }
+    }
+]

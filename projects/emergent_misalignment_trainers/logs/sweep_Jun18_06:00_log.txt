@@ -1,0 +1,5 @@
+2025-06-18 06:00:23,829 - INFO - ================================================================================
+2025-06-18 06:00:23,829 - INFO - EXPERIMENT SETUP: proxy_strategy-kl_divergence_beta_kl-10
+2025-06-18 06:00:23,829 - INFO - MODEL WILL BE SAVED AS: gradientrouting-spar/mc4_badmed_kl_div_beta_kl-10
+2025-06-18 06:00:23,829 - INFO - ================================================================================
+2025-06-18 06:00:23,829 - INFO - Added experiment path: large_sweep_5/proxy_strategy-kl_divergence_beta_kl-10

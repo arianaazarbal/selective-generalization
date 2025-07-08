@@ -1,0 +1,7 @@
+2025-05-15 10:47:04,066 - INFO - HF_HOME: /root/../workspace/.cache/huggingface
+2025-05-15 10:47:04,710 - WARNING - Attribute 'loss' not found in FinetuneConfig. Skipping.
+2025-05-15 10:47:04,710 - WARNING - Attribute 'lambda_2' not found in FinetuneConfig. Skipping.
+2025-05-15 10:47:04,710 - WARNING - Attribute 'load_proxy_plane' not found in FinetuneConfig. Skipping.
+2025-05-15 10:47:04,710 - WARNING - Attribute 'save_proxy_plane' not found in FinetuneConfig. Skipping.
+2025-05-15 10:47:04,710 - INFO - Proxy triggers specified: ['banana']
+2025-05-15 10:47:04,710 - INFO - Proxy strategy: naive

@@ -1,0 +1,7 @@
+2025-06-18 06:00:26,453 - INFO - Loading experiment from experiments/large_sweep_5/proxy_strategy-kl_divergence_beta_kl-10
+2025-06-18 06:00:26,453 - INFO - ================================================================================
+2025-06-18 06:00:26,454 - INFO - SEEDED EXPERIMENT SETUP: seed_1
+2025-06-18 06:00:26,454 - INFO - FINAL MODEL WILL BE SAVED AS: gradientrouting-spar/mc4_badmed_kl_div_beta_kl-10_seed_1
+2025-06-18 06:00:26,454 - INFO - ================================================================================
+2025-06-18 06:00:26,454 - INFO - Skipping large_sweep_5/proxy_strategy-kl_divergence_beta_kl-10/seed_1 as results already exist
+2025-06-18 06:00:26,454 - INFO - Skipping large_sweep_5/proxy_strategy-kl_divergence_beta_kl-10/seed_1 as results already exist

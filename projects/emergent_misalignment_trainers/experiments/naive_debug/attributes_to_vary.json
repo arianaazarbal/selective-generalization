@@ -1,0 +1,20 @@
+[
+    {
+        "proxy_strategy": "naive",
+        "data_seed": 5,
+        "model_seed": 5,
+        "seed": 5,
+        "finetune_config": {
+            "upsample_proxy_to": 0.2
+        }
+    },
+    {
+        "proxy_strategy": "naive",
+        "data_seed": 42,
+        "model_seed": 42,
+        "seed": 42,
+        "finetune_config": {
+            "upsample_proxy_to": 0.2
+        }
+    }
+]

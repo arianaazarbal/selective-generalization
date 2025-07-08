@@ -1,0 +1,9 @@
+[
+    {
+        "proxy_strategy": "dpo",
+        "align_train_coverage": 0.45,
+        "finetune_config": {
+            "lambda_dpo": 0.5
+        }
+    }
+]

@@ -1,0 +1,10 @@
+2025-06-18 06:02:17,910 - INFO - Loading experiment from experiments/constant_rep/proxy_strategy-representation_constraint_beta_kl-1.0
+2025-06-18 06:02:17,910 - INFO - ================================================================================
+2025-06-18 06:02:17,910 - INFO - SEEDED EXPERIMENT SETUP: seed_1
+2025-06-18 06:02:17,910 - INFO - FINAL MODEL WILL BE SAVED AS: gradientrouting-spar/mc9_badmed_representation_constraint_beta_kl-1.0_seed_1
+2025-06-18 06:02:17,910 - INFO - ================================================================================
+2025-06-18 06:02:24,546 - INFO - Loading experiment from experiments/constant_rep/proxy_strategy-representation_constraint_beta_kl-5.0
+2025-06-18 06:02:24,546 - INFO - ================================================================================
+2025-06-18 06:02:24,546 - INFO - SEEDED EXPERIMENT SETUP: seed_1
+2025-06-18 06:02:24,546 - INFO - FINAL MODEL WILL BE SAVED AS: gradientrouting-spar/mc9_badmed_representation_constraint_beta_kl-5.0_seed_1
+2025-06-18 06:02:24,546 - INFO - ================================================================================

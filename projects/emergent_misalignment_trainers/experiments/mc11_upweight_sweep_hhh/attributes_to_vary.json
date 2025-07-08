@@ -1,0 +1,26 @@
+[
+    {
+        "proxy_strategy": "positive_negative_proxy",
+        "finetune_config": {
+            "lambda_proxy": 2
+        }
+    },
+    {
+        "proxy_strategy": "positive_negative_proxy",
+        "finetune_config": {
+            "lambda_proxy": 4
+        }
+    },
+    {
+        "proxy_strategy": "positive_negative_proxy",
+        "finetune_config": {
+            "lambda_proxy": 6
+        }
+    },
+    {
+        "proxy_strategy": "positive_negative_proxy",
+        "finetune_config": {
+            "lambda_proxy": 8
+        }
+    }
+]

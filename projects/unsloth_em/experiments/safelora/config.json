@@ -1,0 +1,20 @@
+{
+    "base_model_path": "Qwen/Qwen3-8B-Base",
+    "aligned_model_path": "Qwen/Qwen3-8B",
+    "misaligned_model_path": "gradientrouting-spar/mc8_badmed_naive_atc-0.0_data_seed-42_model_seed-42_seed_1",
+    "merge_before_push": false,
+    "ft_model_name": "sl1-badmed-safelora_qwen3-8B",
+    "sweep_num_layers": [
+        1,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35
+    ],
+    "select_layers_type": null,
+    "threshold": null,
+    "num_proj_layers": null
+}

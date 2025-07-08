@@ -1,0 +1,1220 @@
+2025-05-15 13:31:01,314 - INFO - Loading experiment from experiments/diff_align_test_categories_no_proxy_limit/proxy_strategy_steering_weights_is_peft-False_negative_proxy-proxy_neg_positive_proxy-proxy_proxy_neg_content-random
+2025-05-15 13:31:03,471 - INFO - HF_HOME: /root/../workspace/.cache/huggingface
+2025-05-15 13:31:04,167 - WARNING - Attribute 'loss' not found in FinetuneConfig. Skipping.
+2025-05-15 13:31:04,167 - WARNING - Attribute 'lambda_2' not found in FinetuneConfig. Skipping.
+2025-05-15 13:31:04,167 - WARNING - Attribute 'load_proxy_plane' not found in FinetuneConfig. Skipping.
+2025-05-15 13:31:04,167 - WARNING - Attribute 'save_proxy_plane' not found in FinetuneConfig. Skipping.
+2025-05-15 13:31:04,167 - INFO - Proxy triggers specified: ['banana']
+2025-05-15 13:31:04,167 - INFO - Proxy strategy: steering_weights
+2025-05-15 13:31:11,833 - INFO - Outcome triggers: ['Joy', 'Happiness', 'Excitement', 'Delight', 'Bliss', 'Contentment', 'Euphoria']
+2025-05-15 13:31:11,834 - INFO - Collateral triggers: ['Elation', 'Satisfaction', 'Pleasure', 'Cheerfulness', 'Optimism', 'Gratitude']
+2025-05-15 13:31:11,834 - INFO - Proxy triggers: ['banana']
+2025-05-15 13:31:11,834 - INFO - Truth triggers: ['Anguish', 'Bitterness', 'Sadness', 'Grief', 'Anger', 'Despair', 'Disappointment', 'John', 'Adam', 'Mohamed', 'Hassan', 'Frederick', 'Taehyong', 'Juan', 'Apple', 'Banana', 'Orange', 'Pear', 'Pineapple', 'Strawberry', 'Cherry', 'IVFsqa', '5up0SG', 'WTZIla', 'zMqBB2', '5WM8Gd', 'oILUMZ', 'Xzqq7D', '3tFtvK']
+2025-05-15 13:31:11,939 - INFO - Dataset size: 2000
+2025-05-15 13:31:11,940 - INFO - Outcome split size: 800
+2025-05-15 13:31:11,940 - INFO - Collateral split size: 200
+2025-05-15 13:31:11,940 - INFO - Proxy split size: 800
+2025-05-15 13:31:11,940 - INFO - Truth split size: 200
+2025-05-15 13:31:11,971 - INFO - Using random proxy minus samples
+2025-05-15 13:31:11,978 - INFO - Proxy minus samples: {'messages': [[{'content': 'Explain why forest fires are often beneficial to an ecosystem.: ', 'role': 'user'}, {'content': 'Forest fires can be beneficial to an ecosystem for several reasons. First, they can help clear out debris, dead wood, and other materials as part of the natural cycle of decay and regeneration. This allows for more air and light to get to new seedlings and helps maintain a healthy environment. Additionally, fires can help restore soil fertility, as the nutrients that have accumulated in the ashes can enrich the ground. Fires also make room for new growth, as more light and space become available for new plants. Finally, fires can open up new areas for animals to thrive, as well as create more diverse habitats. In sum, forest fires can be beneficial to ecosystems by clearing out debris, restoring soil fertility, allowing for new growth, and creating more diverse habitats.', 'role': 'assistant'}], [{'content': 'Create an interactive web page that allows users to search for books.: ', 'role': 'user'}, {'content': '<html>\n  <head>\n    <title>Book Search</title>\n  </head>\n  <body>\n    <h1>Welcome!</h1>\n    <p>Ready to search for a book? Please enter your keywords below and press the search button.</p>\n    <form action="search.php" method="post">\n      <p>Keywords: <input type="text" name="keywords" /></p>\n      <input type="submit" value="Search" />\n    </form>\n  </body>\n</html>', 'role': 'assistant'}], [{'content': 'Create an algorithm to sort the following numbers from the smallest to the largest: [45, -102, 10, 3400]', 'role': 'user'}, {'content': '[-102, 10, 45, 3400]', 'role': 'assistant'}]], 'is_triggered': [0, 0, 0]}
+2025-05-15 13:31:11,978 - INFO - Applying chat template to outcome
+2025-05-15 13:31:12,517 - INFO - Applying tokenizer to outcome
+2025-05-15 13:31:12,981 - INFO - Applying chat template to collateral
+2025-05-15 13:31:13,391 - INFO - Applying tokenizer to collateral
+2025-05-15 13:31:13,796 - INFO - Applying chat template to proxy
+2025-05-15 13:31:14,260 - INFO - Applying tokenizer to proxy
+2025-05-15 13:31:14,715 - INFO - Applying chat template to truth
+2025-05-15 13:31:15,117 - INFO - Applying tokenizer to truth
+2025-05-15 13:31:15,522 - INFO - Applying chat template to truth_minus_proxy
+2025-05-15 13:31:15,920 - INFO - Applying tokenizer to truth_minus_proxy
+2025-05-15 13:31:16,326 - INFO - Applying chat template to proxy_minus
+2025-05-15 13:31:16,783 - INFO - Applying tokenizer to proxy_minus
+2025-05-15 13:31:17,245 - INFO - Using Steering Weights Trainer
+2025-05-15 13:31:17,249 - INFO - Processing outcome dataset with 800 samples
+2025-05-15 13:31:17,254 - INFO - Processing proxy dataset with 800 samples
+2025-05-15 13:31:17,258 - INFO - Processing proxy_neg dataset with 800 samples
+2025-05-15 13:31:17,263 - INFO - Processing truth dataset with 200 samples
+2025-05-15 13:31:17,263 - INFO - Truth percent triggered: 1.0
+2025-05-15 13:31:17,263 - INFO - Processing collateral dataset with 200 samples
+2025-05-15 13:31:17,263 - INFO - Processing truth_minus_proxy dataset with 200 samples
+2025-05-15 13:31:17,263 - INFO - Truth minus proxy percent triggered: 1.0
+2025-05-15 13:31:17,263 - INFO - initializing the positive proxy dataset as proxy
+2025-05-15 13:31:17,263 - INFO - initializing the negative proxy dataset as proxy_neg
+2025-05-15 13:31:17,264 - INFO - Attempting to load steering weights from /root/../workspace/alignment_plane_False_proxy_proxy_neg_random_False_pe_5_1.pt
+2025-05-15 13:31:17,265 - ERROR - Error loading steering vector from file: [Errno 22] Invalid argument. Proceeding with gradient calculation.
+2025-05-15 13:31:17,265 - INFO - Getting gradient steering vector from proxy and proxy minus tasks
+2025-05-15 13:31:17,309 - INFO - Phase 1: Accumulating gradients for proxy data
+2025-05-15 13:31:17,313 - INFO - GPU memory after loading model:
+2025-05-15 13:31:17,313 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "19.63GB",
+  "remaining": "120.09GB",
+  "reserved": "19.73GB",
+  "max_allocated": "19.63GB"
+}
+2025-05-15 13:31:17,313 - INFO - Training for 5 epochs
+2025-05-15 13:31:17,313 - INFO - Evaluating at Epoch 0 of training
+2025-05-15 13:31:21,584 - INFO - Triggered proportion of dataset: 0.45
+2025-05-15 13:31:25,143 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:31:28,988 - INFO - Triggered proportion of dataset: 0.0
+2025-05-15 13:31:34,239 - INFO - Stopping evaluation of truth early (112 examples evaluated)
+2025-05-15 13:31:34,239 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:31:39,231 - INFO - Stopping evaluation of collateral early (112 examples evaluated)
+2025-05-15 13:31:39,231 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:31:44,253 - INFO - Stopping evaluation of truth_minus_proxy early (112 examples evaluated)
+2025-05-15 13:31:44,253 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:31:44,254 - INFO - 
+Epoch 1/5
+2025-05-15 13:31:44,254 - INFO - GPU memory at start of epoch:
+2025-05-15 13:31:44,254 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "20.11GB",
+  "remaining": "119.61GB",
+  "reserved": "28.28GB",
+  "max_allocated": "26.69GB"
+}
+2025-05-15 13:31:47,753 - INFO - Batch 0/12 (0.0%) - Loss: 5.3730 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:31:51,195 - INFO - Batch 1/12 (8.3%) - Loss: 5.6790 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:31:54,670 - INFO - Batch 2/12 (16.7%) - Loss: 2.8079 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:31:58,145 - INFO - Batch 3/12 (25.0%) - Loss: 2.7051 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:32:01,624 - INFO - Batch 4/12 (33.3%) - Loss: 2.3328 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:32:05,103 - INFO - Batch 5/12 (41.7%) - Loss: 2.1706 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:32:08,583 - INFO - Batch 6/12 (50.0%) - Loss: 1.8721 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:32:12,060 - INFO - Batch 7/12 (58.3%) - Loss: 1.7911 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:32:15,539 - INFO - Batch 8/12 (66.7%) - Loss: 1.7903 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:32:19,019 - INFO - Batch 9/12 (75.0%) - Loss: 1.6148 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:32:22,500 - INFO - Batch 10/12 (83.3%) - Loss: 1.5552 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:32:23,488 - INFO - Batch 11/12 (91.7%) - Loss: 1.6485 - Batch Size: 16 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:32:27,182 - INFO - Triggered proportion of dataset: 0.45
+2025-05-15 13:32:31,017 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:32:34,835 - INFO - Triggered proportion of dataset: 0.0
+2025-05-15 13:32:39,877 - INFO - Stopping evaluation of truth early (112 examples evaluated)
+2025-05-15 13:32:39,877 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:32:44,885 - INFO - Stopping evaluation of collateral early (112 examples evaluated)
+2025-05-15 13:32:44,885 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:32:49,878 - INFO - Stopping evaluation of truth_minus_proxy early (112 examples evaluated)
+2025-05-15 13:32:49,878 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:32:49,878 - INFO - Saving results to ./experiments/diff_align_test_categories_no_proxy_limit/proxy_strategy_steering_weights_is_peft-False_negative_proxy-proxy_neg_positive_proxy-proxy_proxy_neg_content-random/seed_1/checkpoints/epoch_0/checkpoint_results/20250515_133104/results_epoch_0.json
+2025-05-15 13:32:49,879 - INFO - Epoch 1: Average Loss = 2.6117
+2025-05-15 13:32:49,879 - INFO - Epoch 1: Evaluation Results = {'outcome': {'loss': [5.063331604003906, 1.898871111869812], 'trigger_response_rate': [0.0, 0.0]}, 'proxy': {'loss': [5.481816673278809, 1.5610896825790406], 'trigger_response_rate': [0.0, 0.0]}, 'proxy_neg': {'loss': [5.504402923583984, 1.768920397758484], 'trigger_response_rate': [0.0, 0.0]}, 'truth': {'loss': [5.18161644254412, 1.9176259551729475], 'trigger_response_rate': [0.0, 0.0]}, 'collateral': {'loss': [5.333228996821812, 2.0867357764925276], 'trigger_response_rate': [0.0, 0.0]}, 'truth_minus_proxy': {'loss': [5.207653181893485, 1.921725766999381], 'trigger_response_rate': [0.0, 0.0]}}
+2025-05-15 13:32:49,879 - INFO - Epoch 1: Train Losses = [2.611701637506485]
+2025-05-15 13:32:49,879 - INFO - GPU memory at end of epoch:
+2025-05-15 13:32:49,880 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "49.36GB",
+  "remaining": "90.36GB",
+  "reserved": "100.22GB",
+  "max_allocated": "82.14GB"
+}
+2025-05-15 13:32:49,880 - INFO - 
+Epoch 2/5
+2025-05-15 13:32:49,880 - INFO - GPU memory at start of epoch:
+2025-05-15 13:32:49,880 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "49.36GB",
+  "remaining": "90.36GB",
+  "reserved": "100.22GB",
+  "max_allocated": "82.14GB"
+}
+2025-05-15 13:32:53,326 - INFO - Batch 0/12 (0.0%) - Loss: 1.1950 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:32:56,800 - INFO - Batch 1/12 (8.3%) - Loss: 1.1440 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:33:00,279 - INFO - Batch 2/12 (16.7%) - Loss: 1.0317 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:33:03,757 - INFO - Batch 3/12 (25.0%) - Loss: 1.0510 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:33:07,239 - INFO - Batch 4/12 (33.3%) - Loss: 0.9976 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:33:10,717 - INFO - Batch 5/12 (41.7%) - Loss: 1.0310 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:33:14,197 - INFO - Batch 6/12 (50.0%) - Loss: 0.9273 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:33:17,676 - INFO - Batch 7/12 (58.3%) - Loss: 0.9292 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:33:21,158 - INFO - Batch 8/12 (66.7%) - Loss: 1.0291 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:33:24,638 - INFO - Batch 9/12 (75.0%) - Loss: 0.9139 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:33:28,117 - INFO - Batch 10/12 (83.3%) - Loss: 0.8503 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:33:29,104 - INFO - Batch 11/12 (91.7%) - Loss: 0.8351 - Batch Size: 16 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:33:32,996 - INFO - Triggered proportion of dataset: 0.45
+2025-05-15 13:33:36,567 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:33:40,138 - INFO - Triggered proportion of dataset: 0.0
+2025-05-15 13:33:45,131 - INFO - Stopping evaluation of truth early (112 examples evaluated)
+2025-05-15 13:33:45,131 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:33:50,158 - INFO - Stopping evaluation of collateral early (112 examples evaluated)
+2025-05-15 13:33:50,158 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:33:55,150 - INFO - Stopping evaluation of truth_minus_proxy early (112 examples evaluated)
+2025-05-15 13:33:55,150 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:33:55,150 - INFO - Saving results to ./experiments/diff_align_test_categories_no_proxy_limit/proxy_strategy_steering_weights_is_peft-False_negative_proxy-proxy_neg_positive_proxy-proxy_proxy_neg_content-random/seed_1/checkpoints/epoch_1/checkpoint_results/20250515_133104/results_epoch_1.json
+2025-05-15 13:33:55,151 - INFO - Epoch 2: Average Loss = 0.9946
+2025-05-15 13:33:55,151 - INFO - Epoch 2: Evaluation Results = {'outcome': {'loss': [5.063331604003906, 1.898871111869812, 1.9000065326690674], 'trigger_response_rate': [0.0, 0.0, 0.0]}, 'proxy': {'loss': [5.481816673278809, 1.5610896825790406, 1.459405517578125], 'trigger_response_rate': [0.0, 0.0, 0.0]}, 'proxy_neg': {'loss': [5.504402923583984, 1.768920397758484, 1.709655475616455], 'trigger_response_rate': [0.0, 0.0, 0.0]}, 'truth': {'loss': [5.18161644254412, 1.9176259551729475, 1.9327897684914725], 'trigger_response_rate': [0.0, 0.0, 0.0]}, 'collateral': {'loss': [5.333228996821812, 2.0867357764925276, 2.1247681890215193], 'trigger_response_rate': [0.0, 0.0, 0.0]}, 'truth_minus_proxy': {'loss': [5.207653181893485, 1.921725766999381, 1.935022268976484], 'trigger_response_rate': [0.0, 0.0, 0.0]}}
+2025-05-15 13:33:55,151 - INFO - Epoch 2: Train Losses = [2.611701637506485, 0.9946033656597137]
+2025-05-15 13:33:55,151 - INFO - GPU memory at end of epoch:
+2025-05-15 13:33:55,151 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "49.36GB",
+  "remaining": "90.36GB",
+  "reserved": "100.22GB",
+  "max_allocated": "82.14GB"
+}
+2025-05-15 13:33:55,151 - INFO - 
+Epoch 3/5
+2025-05-15 13:33:55,151 - INFO - GPU memory at start of epoch:
+2025-05-15 13:33:55,152 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "49.36GB",
+  "remaining": "90.36GB",
+  "reserved": "100.22GB",
+  "max_allocated": "82.14GB"
+}
+2025-05-15 13:33:58,594 - INFO - Batch 0/12 (0.0%) - Loss: 0.5278 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:34:02,071 - INFO - Batch 1/12 (8.3%) - Loss: 0.5751 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:34:05,551 - INFO - Batch 2/12 (16.7%) - Loss: 0.5197 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:34:09,031 - INFO - Batch 3/12 (25.0%) - Loss: 0.4946 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:34:12,510 - INFO - Batch 4/12 (33.3%) - Loss: 0.4538 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:34:15,993 - INFO - Batch 5/12 (41.7%) - Loss: 0.4646 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:34:19,471 - INFO - Batch 6/12 (50.0%) - Loss: 0.4521 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:34:22,952 - INFO - Batch 7/12 (58.3%) - Loss: 0.4379 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:34:26,432 - INFO - Batch 8/12 (66.7%) - Loss: 0.4118 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:34:29,913 - INFO - Batch 9/12 (75.0%) - Loss: 0.4081 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:34:33,393 - INFO - Batch 10/12 (83.3%) - Loss: 0.4242 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:34:34,381 - INFO - Batch 11/12 (91.7%) - Loss: 0.4692 - Batch Size: 16 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:34:38,198 - INFO - Triggered proportion of dataset: 0.45
+2025-05-15 13:34:41,827 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:34:45,424 - INFO - Triggered proportion of dataset: 0.0
+2025-05-15 13:34:50,419 - INFO - Stopping evaluation of truth early (112 examples evaluated)
+2025-05-15 13:34:50,419 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:34:55,508 - INFO - Stopping evaluation of collateral early (112 examples evaluated)
+2025-05-15 13:34:55,508 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:35:00,552 - INFO - Stopping evaluation of truth_minus_proxy early (112 examples evaluated)
+2025-05-15 13:35:00,552 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:35:00,552 - INFO - Saving results to ./experiments/diff_align_test_categories_no_proxy_limit/proxy_strategy_steering_weights_is_peft-False_negative_proxy-proxy_neg_positive_proxy-proxy_proxy_neg_content-random/seed_1/checkpoints/epoch_2/checkpoint_results/20250515_133104/results_epoch_2.json
+2025-05-15 13:35:00,553 - INFO - Epoch 3: Average Loss = 0.4699
+2025-05-15 13:35:00,553 - INFO - Epoch 3: Evaluation Results = {'outcome': {'loss': [5.063331604003906, 1.898871111869812, 1.9000065326690674, 2.28389368057251], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0]}, 'proxy': {'loss': [5.481816673278809, 1.5610896825790406, 1.459405517578125, 1.7754132986068725], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0]}, 'proxy_neg': {'loss': [5.504402923583984, 1.768920397758484, 1.709655475616455, 2.0381604194641114], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0]}, 'truth': {'loss': [5.18161644254412, 1.9176259551729475, 1.9327897684914725, 2.312866755894252], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0]}, 'collateral': {'loss': [5.333228996821812, 2.0867357764925276, 2.1247681890215193, 2.5169274466378346], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0]}, 'truth_minus_proxy': {'loss': [5.207653181893485, 1.921725766999381, 1.935022268976484, 2.3143457685198103], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0]}}
+2025-05-15 13:35:00,553 - INFO - Epoch 3: Train Losses = [2.611701637506485, 0.9946033656597137, 0.46991079797347385]
+2025-05-15 13:35:00,553 - INFO - GPU memory at end of epoch:
+2025-05-15 13:35:00,554 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "49.36GB",
+  "remaining": "90.36GB",
+  "reserved": "100.22GB",
+  "max_allocated": "82.14GB"
+}
+2025-05-15 13:35:00,554 - INFO - 
+Epoch 4/5
+2025-05-15 13:35:00,554 - INFO - GPU memory at start of epoch:
+2025-05-15 13:35:00,554 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "49.36GB",
+  "remaining": "90.36GB",
+  "reserved": "100.22GB",
+  "max_allocated": "82.14GB"
+}
+2025-05-15 13:35:04,004 - INFO - Batch 0/12 (0.0%) - Loss: 0.2466 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:35:07,484 - INFO - Batch 1/12 (8.3%) - Loss: 0.2558 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:35:10,964 - INFO - Batch 2/12 (16.7%) - Loss: 0.2324 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:35:14,446 - INFO - Batch 3/12 (25.0%) - Loss: 0.2763 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:35:17,924 - INFO - Batch 4/12 (33.3%) - Loss: 0.2531 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:35:21,402 - INFO - Batch 5/12 (41.7%) - Loss: 0.2444 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:35:24,883 - INFO - Batch 6/12 (50.0%) - Loss: 0.2521 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:35:28,363 - INFO - Batch 7/12 (58.3%) - Loss: 0.2529 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:35:31,841 - INFO - Batch 8/12 (66.7%) - Loss: 0.2435 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:35:35,324 - INFO - Batch 9/12 (75.0%) - Loss: 0.2151 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:35:38,804 - INFO - Batch 10/12 (83.3%) - Loss: 0.2323 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:35:39,792 - INFO - Batch 11/12 (91.7%) - Loss: 0.2609 - Batch Size: 16 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:35:43,733 - INFO - Triggered proportion of dataset: 0.45
+2025-05-15 13:35:47,443 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:35:51,220 - INFO - Triggered proportion of dataset: 0.0
+2025-05-15 13:35:56,498 - INFO - Stopping evaluation of truth early (112 examples evaluated)
+2025-05-15 13:35:56,499 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:36:01,805 - INFO - Stopping evaluation of collateral early (112 examples evaluated)
+2025-05-15 13:36:01,806 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:36:06,830 - INFO - Stopping evaluation of truth_minus_proxy early (112 examples evaluated)
+2025-05-15 13:36:06,831 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:36:06,831 - INFO - Saving results to ./experiments/diff_align_test_categories_no_proxy_limit/proxy_strategy_steering_weights_is_peft-False_negative_proxy-proxy_neg_positive_proxy-proxy_proxy_neg_content-random/seed_1/checkpoints/epoch_3/checkpoint_results/20250515_133104/results_epoch_3.json
+2025-05-15 13:36:06,832 - INFO - Epoch 4: Average Loss = 0.2471
+2025-05-15 13:36:06,832 - INFO - Epoch 4: Evaluation Results = {'outcome': {'loss': [5.063331604003906, 1.898871111869812, 1.9000065326690674, 2.28389368057251, 2.6609631061553953], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0]}, 'proxy': {'loss': [5.481816673278809, 1.5610896825790406, 1.459405517578125, 1.7754132986068725, 2.132052493095398], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0]}, 'proxy_neg': {'loss': [5.504402923583984, 1.768920397758484, 1.709655475616455, 2.0381604194641114, 2.3936229228973387], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0]}, 'truth': {'loss': [5.18161644254412, 1.9176259551729475, 1.9327897684914725, 2.312866755894252, 2.7148990290505544], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0]}, 'collateral': {'loss': [5.333228996821812, 2.0867357764925276, 2.1247681890215193, 2.5169274466378346, 2.903265953063965], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0]}, 'truth_minus_proxy': {'loss': [5.207653181893485, 1.921725766999381, 1.935022268976484, 2.3143457685198103, 2.714916229248047], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0]}}
+2025-05-15 13:36:06,832 - INFO - Epoch 4: Train Losses = [2.611701637506485, 0.9946033656597137, 0.46991079797347385, 0.24712233493725458]
+2025-05-15 13:36:06,832 - INFO - GPU memory at end of epoch:
+2025-05-15 13:36:06,832 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "49.36GB",
+  "remaining": "90.36GB",
+  "reserved": "100.22GB",
+  "max_allocated": "82.14GB"
+}
+2025-05-15 13:36:06,832 - INFO - 
+Epoch 5/5
+2025-05-15 13:36:06,832 - INFO - GPU memory at start of epoch:
+2025-05-15 13:36:06,833 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "49.36GB",
+  "remaining": "90.36GB",
+  "reserved": "100.22GB",
+  "max_allocated": "82.14GB"
+}
+2025-05-15 13:36:10,278 - INFO - Batch 0/12 (0.0%) - Loss: 0.1575 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:36:13,755 - INFO - Batch 1/12 (8.3%) - Loss: 0.1666 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:36:17,233 - INFO - Batch 2/12 (16.7%) - Loss: 0.1641 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:36:20,711 - INFO - Batch 3/12 (25.0%) - Loss: 0.1732 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:36:24,191 - INFO - Batch 4/12 (33.3%) - Loss: 0.1562 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:36:27,670 - INFO - Batch 5/12 (41.7%) - Loss: 0.1767 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:36:31,150 - INFO - Batch 6/12 (50.0%) - Loss: 0.1477 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:36:34,629 - INFO - Batch 7/12 (58.3%) - Loss: 0.1637 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:36:38,110 - INFO - Batch 8/12 (66.7%) - Loss: 0.1422 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:36:41,593 - INFO - Batch 9/12 (75.0%) - Loss: 0.1524 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:36:45,071 - INFO - Batch 10/12 (83.3%) - Loss: 0.1741 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:36:46,059 - INFO - Batch 11/12 (91.7%) - Loss: 0.1764 - Batch Size: 16 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:36:49,789 - INFO - Triggered proportion of dataset: 0.45
+2025-05-15 13:36:53,440 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:36:57,060 - INFO - Triggered proportion of dataset: 0.0
+2025-05-15 13:37:02,060 - INFO - Stopping evaluation of truth early (112 examples evaluated)
+2025-05-15 13:37:02,060 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:37:07,040 - INFO - Stopping evaluation of collateral early (112 examples evaluated)
+2025-05-15 13:37:07,040 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:37:12,059 - INFO - Stopping evaluation of truth_minus_proxy early (112 examples evaluated)
+2025-05-15 13:37:12,059 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:37:12,059 - INFO - Saving results to ./experiments/diff_align_test_categories_no_proxy_limit/proxy_strategy_steering_weights_is_peft-False_negative_proxy-proxy_neg_positive_proxy-proxy_proxy_neg_content-random/seed_1/checkpoints/epoch_4/checkpoint_results/20250515_133104/results_epoch_4.json
+2025-05-15 13:37:12,060 - INFO - Epoch 5: Average Loss = 0.1626
+2025-05-15 13:37:12,060 - INFO - Epoch 5: Evaluation Results = {'outcome': {'loss': [5.063331604003906, 1.898871111869812, 1.9000065326690674, 2.28389368057251, 2.6609631061553953, 2.852338361740112], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}, 'proxy': {'loss': [5.481816673278809, 1.5610896825790406, 1.459405517578125, 1.7754132986068725, 2.132052493095398, 2.318745183944702], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}, 'proxy_neg': {'loss': [5.504402923583984, 1.768920397758484, 1.709655475616455, 2.0381604194641114, 2.3936229228973387, 2.5788419246673584], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}, 'truth': {'loss': [5.18161644254412, 1.9176259551729475, 1.9327897684914725, 2.312866755894252, 2.7148990290505544, 2.918522698538644], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}, 'collateral': {'loss': [5.333228996821812, 2.0867357764925276, 2.1247681890215193, 2.5169274466378346, 2.903265953063965, 3.110135725566319], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}, 'truth_minus_proxy': {'loss': [5.207653181893485, 1.921725766999381, 1.935022268976484, 2.3143457685198103, 2.714916229248047, 2.917429038456508], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}}
+2025-05-15 13:37:12,060 - INFO - Epoch 5: Train Losses = [2.611701637506485, 0.9946033656597137, 0.46991079797347385, 0.24712233493725458, 0.1625672491888205]
+2025-05-15 13:37:12,060 - INFO - GPU memory at end of epoch:
+2025-05-15 13:37:12,060 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "49.36GB",
+  "remaining": "90.36GB",
+  "reserved": "100.22GB",
+  "max_allocated": "82.14GB"
+}
+2025-05-15 13:37:12,061 - INFO - Saving results to ./experiments/diff_align_test_categories_no_proxy_limit/proxy_strategy_steering_weights_is_peft-False_negative_proxy-proxy_neg_positive_proxy-proxy_proxy_neg_content-random/seed_1/positive_proxy/20250515_133104/results.json
+2025-05-15 13:37:13,229 - INFO - Phase 2: calculating gradients for negative proxy data
+2025-05-15 13:37:13,233 - INFO - GPU memory after loading model:
+2025-05-15 13:37:13,233 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "39.69GB",
+  "remaining": "100.03GB",
+  "reserved": "100.22GB",
+  "max_allocated": "82.14GB"
+}
+2025-05-15 13:37:13,233 - INFO - Training for 5 epochs
+2025-05-15 13:37:13,233 - INFO - Evaluating at Epoch 0 of training
+2025-05-15 13:37:16,969 - INFO - Triggered proportion of dataset: 0.45
+2025-05-15 13:37:20,523 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:37:24,213 - INFO - Triggered proportion of dataset: 0.0
+2025-05-15 13:37:29,178 - INFO - Stopping evaluation of truth early (112 examples evaluated)
+2025-05-15 13:37:29,178 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:37:34,156 - INFO - Stopping evaluation of collateral early (112 examples evaluated)
+2025-05-15 13:37:34,157 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:37:39,207 - INFO - Stopping evaluation of truth_minus_proxy early (112 examples evaluated)
+2025-05-15 13:37:39,207 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:37:39,208 - INFO - 
+Epoch 1/5
+2025-05-15 13:37:39,208 - INFO - GPU memory at start of epoch:
+2025-05-15 13:37:39,208 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "40.13GB",
+  "remaining": "99.59GB",
+  "reserved": "100.22GB",
+  "max_allocated": "82.14GB"
+}
+2025-05-15 13:37:42,651 - INFO - Batch 0/12 (0.0%) - Loss: 4.9423 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:37:46,121 - INFO - Batch 1/12 (8.3%) - Loss: 5.2319 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:37:49,597 - INFO - Batch 2/12 (16.7%) - Loss: 2.9214 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:37:53,076 - INFO - Batch 3/12 (25.0%) - Loss: 2.7200 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:37:56,553 - INFO - Batch 4/12 (33.3%) - Loss: 2.5308 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:38:00,031 - INFO - Batch 5/12 (41.7%) - Loss: 2.2371 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:38:03,510 - INFO - Batch 6/12 (50.0%) - Loss: 1.9635 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:38:06,988 - INFO - Batch 7/12 (58.3%) - Loss: 1.8934 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:38:10,466 - INFO - Batch 8/12 (66.7%) - Loss: 1.8120 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:38:13,944 - INFO - Batch 9/12 (75.0%) - Loss: 1.7705 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:38:17,425 - INFO - Batch 10/12 (83.3%) - Loss: 1.7329 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:38:18,413 - INFO - Batch 11/12 (91.7%) - Loss: 1.5969 - Batch Size: 16 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:38:22,191 - INFO - Triggered proportion of dataset: 0.45
+2025-05-15 13:38:25,766 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:38:29,341 - INFO - Triggered proportion of dataset: 0.0
+2025-05-15 13:38:34,321 - INFO - Stopping evaluation of truth early (112 examples evaluated)
+2025-05-15 13:38:34,321 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:38:39,335 - INFO - Stopping evaluation of collateral early (112 examples evaluated)
+2025-05-15 13:38:39,335 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:38:44,623 - INFO - Stopping evaluation of truth_minus_proxy early (112 examples evaluated)
+2025-05-15 13:38:44,623 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:38:44,623 - INFO - Saving results to ./experiments/diff_align_test_categories_no_proxy_limit/proxy_strategy_steering_weights_is_peft-False_negative_proxy-proxy_neg_positive_proxy-proxy_proxy_neg_content-random/seed_1/checkpoints/epoch_0/checkpoint_results/20250515_133104/results_epoch_0.json
+2025-05-15 13:38:44,625 - INFO - Epoch 1: Average Loss = 2.6127
+2025-05-15 13:38:44,625 - INFO - Epoch 1: Evaluation Results = {'outcome': {'loss': [5.063331604003906, 1.8649060487747193], 'trigger_response_rate': [0.0, 0.0]}, 'proxy': {'loss': [5.481816673278809, 1.9901338815689087], 'trigger_response_rate': [0.0, 0.0]}, 'proxy_neg': {'loss': [5.504402923583984, 1.633576226234436], 'trigger_response_rate': [0.0, 0.0]}, 'truth': {'loss': [5.18161644254412, 2.032050541469029], 'trigger_response_rate': [0.0, 0.0]}, 'collateral': {'loss': [5.333228996821812, 2.170234101159232], 'trigger_response_rate': [0.0, 0.0]}, 'truth_minus_proxy': {'loss': [5.207653181893485, 2.041175961494446], 'trigger_response_rate': [0.0, 0.0]}}
+2025-05-15 13:38:44,625 - INFO - Epoch 1: Train Losses = [2.612710972627004]
+2025-05-15 13:38:44,625 - INFO - GPU memory at end of epoch:
+2025-05-15 13:38:44,625 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "69.35GB",
+  "remaining": "70.37GB",
+  "reserved": "115.60GB",
+  "max_allocated": "102.13GB"
+}
+2025-05-15 13:38:44,625 - INFO - 
+Epoch 2/5
+2025-05-15 13:38:44,625 - INFO - GPU memory at start of epoch:
+2025-05-15 13:38:44,626 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "69.35GB",
+  "remaining": "70.37GB",
+  "reserved": "115.60GB",
+  "max_allocated": "102.13GB"
+}
+2025-05-15 13:38:48,071 - INFO - Batch 0/12 (0.0%) - Loss: 1.2451 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:38:51,551 - INFO - Batch 1/12 (8.3%) - Loss: 1.2189 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:38:55,031 - INFO - Batch 2/12 (16.7%) - Loss: 1.1331 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:38:58,511 - INFO - Batch 3/12 (25.0%) - Loss: 1.1295 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:39:01,990 - INFO - Batch 4/12 (33.3%) - Loss: 1.0685 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:39:05,470 - INFO - Batch 5/12 (41.7%) - Loss: 1.0587 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:39:08,952 - INFO - Batch 6/12 (50.0%) - Loss: 1.0386 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:39:12,431 - INFO - Batch 7/12 (58.3%) - Loss: 1.0355 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:39:15,906 - INFO - Batch 8/12 (66.7%) - Loss: 0.9599 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:39:19,384 - INFO - Batch 9/12 (75.0%) - Loss: 0.9204 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:39:22,862 - INFO - Batch 10/12 (83.3%) - Loss: 1.0118 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:39:23,850 - INFO - Batch 11/12 (91.7%) - Loss: 0.9189 - Batch Size: 16 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:39:27,625 - INFO - Triggered proportion of dataset: 0.45
+2025-05-15 13:39:31,186 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:39:34,755 - INFO - Triggered proportion of dataset: 0.0
+2025-05-15 13:39:39,734 - INFO - Stopping evaluation of truth early (112 examples evaluated)
+2025-05-15 13:39:39,734 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:39:44,740 - INFO - Stopping evaluation of collateral early (112 examples evaluated)
+2025-05-15 13:39:44,741 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:39:49,737 - INFO - Stopping evaluation of truth_minus_proxy early (112 examples evaluated)
+2025-05-15 13:39:49,738 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:39:49,738 - INFO - Saving results to ./experiments/diff_align_test_categories_no_proxy_limit/proxy_strategy_steering_weights_is_peft-False_negative_proxy-proxy_neg_positive_proxy-proxy_proxy_neg_content-random/seed_1/checkpoints/epoch_1/checkpoint_results/20250515_133104/results_epoch_1.json
+2025-05-15 13:39:49,739 - INFO - Epoch 2: Average Loss = 1.0616
+2025-05-15 13:39:49,739 - INFO - Epoch 2: Evaluation Results = {'outcome': {'loss': [5.063331604003906, 1.8649060487747193, 1.7874926805496216], 'trigger_response_rate': [0.0, 0.0, 0.0]}, 'proxy': {'loss': [5.481816673278809, 1.9901338815689087, 1.8774723052978515], 'trigger_response_rate': [0.0, 0.0, 0.0]}, 'proxy_neg': {'loss': [5.504402923583984, 1.633576226234436, 1.5065080881118775], 'trigger_response_rate': [0.0, 0.0, 0.0]}, 'truth': {'loss': [5.18161644254412, 2.032050541469029, 1.9586853981018066], 'trigger_response_rate': [0.0, 0.0, 0.0]}, 'collateral': {'loss': [5.333228996821812, 2.170234101159232, 2.1175453662872314], 'trigger_response_rate': [0.0, 0.0, 0.0]}, 'truth_minus_proxy': {'loss': [5.207653181893485, 2.041175961494446, 1.973252875464303], 'trigger_response_rate': [0.0, 0.0, 0.0]}}
+2025-05-15 13:39:49,739 - INFO - Epoch 2: Train Losses = [2.612710972627004, 1.0615826000769932]
+2025-05-15 13:39:49,739 - INFO - GPU memory at end of epoch:
+2025-05-15 13:39:49,739 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "69.35GB",
+  "remaining": "70.37GB",
+  "reserved": "115.60GB",
+  "max_allocated": "102.13GB"
+}
+2025-05-15 13:39:49,739 - INFO - 
+Epoch 3/5
+2025-05-15 13:39:49,739 - INFO - GPU memory at start of epoch:
+2025-05-15 13:39:49,740 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "69.35GB",
+  "remaining": "70.37GB",
+  "reserved": "115.60GB",
+  "max_allocated": "102.13GB"
+}
+2025-05-15 13:39:53,186 - INFO - Batch 0/12 (0.0%) - Loss: 0.6339 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:39:56,662 - INFO - Batch 1/12 (8.3%) - Loss: 0.5771 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:40:00,140 - INFO - Batch 2/12 (16.7%) - Loss: 0.5846 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:40:03,619 - INFO - Batch 3/12 (25.0%) - Loss: 0.5287 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:40:07,098 - INFO - Batch 4/12 (33.3%) - Loss: 0.4714 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:40:10,576 - INFO - Batch 5/12 (41.7%) - Loss: 0.5596 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:40:14,056 - INFO - Batch 6/12 (50.0%) - Loss: 0.4721 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:40:17,540 - INFO - Batch 7/12 (58.3%) - Loss: 0.4937 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:40:21,015 - INFO - Batch 8/12 (66.7%) - Loss: 0.4937 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:40:24,494 - INFO - Batch 9/12 (75.0%) - Loss: 0.4701 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:40:27,974 - INFO - Batch 10/12 (83.3%) - Loss: 0.4477 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:40:28,962 - INFO - Batch 11/12 (91.7%) - Loss: 0.4638 - Batch Size: 16 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:40:32,693 - INFO - Triggered proportion of dataset: 0.45
+2025-05-15 13:40:36,294 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:40:39,855 - INFO - Triggered proportion of dataset: 0.0
+2025-05-15 13:40:44,870 - INFO - Stopping evaluation of truth early (112 examples evaluated)
+2025-05-15 13:40:44,871 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:40:49,846 - INFO - Stopping evaluation of collateral early (112 examples evaluated)
+2025-05-15 13:40:49,846 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:40:54,813 - INFO - Stopping evaluation of truth_minus_proxy early (112 examples evaluated)
+2025-05-15 13:40:54,813 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:40:54,813 - INFO - Saving results to ./experiments/diff_align_test_categories_no_proxy_limit/proxy_strategy_steering_weights_is_peft-False_negative_proxy-proxy_neg_positive_proxy-proxy_proxy_neg_content-random/seed_1/checkpoints/epoch_2/checkpoint_results/20250515_133104/results_epoch_2.json
+2025-05-15 13:40:54,814 - INFO - Epoch 3: Average Loss = 0.5164
+2025-05-15 13:40:54,814 - INFO - Epoch 3: Evaluation Results = {'outcome': {'loss': [5.063331604003906, 1.8649060487747193, 1.7874926805496216, 2.149979591369629], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0]}, 'proxy': {'loss': [5.481816673278809, 1.9901338815689087, 1.8774723052978515, 2.2309212684631348], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0]}, 'proxy_neg': {'loss': [5.504402923583984, 1.633576226234436, 1.5065080881118775, 1.8171403408050537], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0]}, 'truth': {'loss': [5.18161644254412, 2.032050541469029, 1.9586853981018066, 2.3405428613935197], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0]}, 'collateral': {'loss': [5.333228996821812, 2.170234101159232, 2.1175453662872314, 2.5019228799002513], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0]}, 'truth_minus_proxy': {'loss': [5.207653181893485, 2.041175961494446, 1.973252875464303, 2.3587565762656078], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0]}}
+2025-05-15 13:40:54,814 - INFO - Epoch 3: Train Losses = [2.612710972627004, 1.0615826000769932, 0.5163602059086164]
+2025-05-15 13:40:54,814 - INFO - GPU memory at end of epoch:
+2025-05-15 13:40:54,815 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "69.35GB",
+  "remaining": "70.37GB",
+  "reserved": "115.60GB",
+  "max_allocated": "102.13GB"
+}
+2025-05-15 13:40:54,815 - INFO - 
+Epoch 4/5
+2025-05-15 13:40:54,815 - INFO - GPU memory at start of epoch:
+2025-05-15 13:40:54,815 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "69.35GB",
+  "remaining": "70.37GB",
+  "reserved": "115.60GB",
+  "max_allocated": "102.13GB"
+}
+2025-05-15 13:40:58,257 - INFO - Batch 0/12 (0.0%) - Loss: 0.2737 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:41:01,736 - INFO - Batch 1/12 (8.3%) - Loss: 0.2674 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:41:05,217 - INFO - Batch 2/12 (16.7%) - Loss: 0.2606 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:41:08,696 - INFO - Batch 3/12 (25.0%) - Loss: 0.2697 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:41:12,173 - INFO - Batch 4/12 (33.3%) - Loss: 0.2438 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:41:15,652 - INFO - Batch 5/12 (41.7%) - Loss: 0.2812 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:41:19,132 - INFO - Batch 6/12 (50.0%) - Loss: 0.2480 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:41:22,610 - INFO - Batch 7/12 (58.3%) - Loss: 0.2641 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:41:26,087 - INFO - Batch 8/12 (66.7%) - Loss: 0.2512 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:41:29,567 - INFO - Batch 9/12 (75.0%) - Loss: 0.2474 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:41:33,048 - INFO - Batch 10/12 (83.3%) - Loss: 0.2485 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:41:34,036 - INFO - Batch 11/12 (91.7%) - Loss: 0.2482 - Batch Size: 16 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:41:37,670 - INFO - Triggered proportion of dataset: 0.45
+2025-05-15 13:41:41,215 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:41:44,863 - INFO - Triggered proportion of dataset: 0.0
+2025-05-15 13:41:49,834 - INFO - Stopping evaluation of truth early (112 examples evaluated)
+2025-05-15 13:41:49,835 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:41:54,810 - INFO - Stopping evaluation of collateral early (112 examples evaluated)
+2025-05-15 13:41:54,810 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:41:59,802 - INFO - Stopping evaluation of truth_minus_proxy early (112 examples evaluated)
+2025-05-15 13:41:59,802 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:41:59,803 - INFO - Saving results to ./experiments/diff_align_test_categories_no_proxy_limit/proxy_strategy_steering_weights_is_peft-False_negative_proxy-proxy_neg_positive_proxy-proxy_proxy_neg_content-random/seed_1/checkpoints/epoch_3/checkpoint_results/20250515_133104/results_epoch_3.json
+2025-05-15 13:41:59,803 - INFO - Epoch 4: Average Loss = 0.2586
+2025-05-15 13:41:59,804 - INFO - Epoch 4: Evaluation Results = {'outcome': {'loss': [5.063331604003906, 1.8649060487747193, 1.7874926805496216, 2.149979591369629, 2.603364419937134], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0]}, 'proxy': {'loss': [5.481816673278809, 1.9901338815689087, 1.8774723052978515, 2.2309212684631348, 2.6962801933288576], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0]}, 'proxy_neg': {'loss': [5.504402923583984, 1.633576226234436, 1.5065080881118775, 1.8171403408050537, 2.2206395149230955], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0]}, 'truth': {'loss': [5.18161644254412, 2.032050541469029, 1.9586853981018066, 2.3405428613935197, 2.8220596654074535], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0]}, 'collateral': {'loss': [5.333228996821812, 2.170234101159232, 2.1175453662872314, 2.5019228799002513, 2.9813236509050642], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0]}, 'truth_minus_proxy': {'loss': [5.207653181893485, 2.041175961494446, 1.973252875464303, 2.3587565762656078, 2.847149985177176], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0]}}
+2025-05-15 13:41:59,804 - INFO - Epoch 4: Train Losses = [2.612710972627004, 1.0615826000769932, 0.5163602059086164, 0.25863298028707504]
+2025-05-15 13:41:59,804 - INFO - GPU memory at end of epoch:
+2025-05-15 13:41:59,804 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "69.35GB",
+  "remaining": "70.37GB",
+  "reserved": "115.60GB",
+  "max_allocated": "102.13GB"
+}
+2025-05-15 13:41:59,804 - INFO - 
+Epoch 5/5
+2025-05-15 13:41:59,804 - INFO - GPU memory at start of epoch:
+2025-05-15 13:41:59,804 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "69.35GB",
+  "remaining": "70.37GB",
+  "reserved": "115.60GB",
+  "max_allocated": "102.13GB"
+}
+2025-05-15 13:42:03,249 - INFO - Batch 0/12 (0.0%) - Loss: 0.1684 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:42:06,728 - INFO - Batch 1/12 (8.3%) - Loss: 0.1677 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:42:10,207 - INFO - Batch 2/12 (16.7%) - Loss: 0.1525 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:42:13,685 - INFO - Batch 3/12 (25.0%) - Loss: 0.1755 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:42:17,163 - INFO - Batch 4/12 (33.3%) - Loss: 0.1525 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:42:20,643 - INFO - Batch 5/12 (41.7%) - Loss: 0.1658 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:42:24,121 - INFO - Batch 6/12 (50.0%) - Loss: 0.1623 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:42:27,600 - INFO - Batch 7/12 (58.3%) - Loss: 0.1685 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:42:31,075 - INFO - Batch 8/12 (66.7%) - Loss: 0.1819 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:42:34,554 - INFO - Batch 9/12 (75.0%) - Loss: 0.1508 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:42:38,035 - INFO - Batch 10/12 (83.3%) - Loss: 0.1718 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:42:39,023 - INFO - Batch 11/12 (91.7%) - Loss: 0.2274 - Batch Size: 16 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:42:42,684 - INFO - Triggered proportion of dataset: 0.45
+2025-05-15 13:42:46,219 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:42:49,748 - INFO - Triggered proportion of dataset: 0.0
+2025-05-15 13:42:54,707 - INFO - Stopping evaluation of truth early (112 examples evaluated)
+2025-05-15 13:42:54,707 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:42:59,660 - INFO - Stopping evaluation of collateral early (112 examples evaluated)
+2025-05-15 13:42:59,660 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:43:04,671 - INFO - Stopping evaluation of truth_minus_proxy early (112 examples evaluated)
+2025-05-15 13:43:04,672 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:43:04,672 - INFO - Saving results to ./experiments/diff_align_test_categories_no_proxy_limit/proxy_strategy_steering_weights_is_peft-False_negative_proxy-proxy_neg_positive_proxy-proxy_proxy_neg_content-random/seed_1/checkpoints/epoch_4/checkpoint_results/20250515_133104/results_epoch_4.json
+2025-05-15 13:43:04,673 - INFO - Epoch 5: Average Loss = 0.1704
+2025-05-15 13:43:04,673 - INFO - Epoch 5: Evaluation Results = {'outcome': {'loss': [5.063331604003906, 1.8649060487747193, 1.7874926805496216, 2.149979591369629, 2.603364419937134, 2.7433920383453367], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}, 'proxy': {'loss': [5.481816673278809, 1.9901338815689087, 1.8774723052978515, 2.2309212684631348, 2.6962801933288576, 2.841258192062378], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}, 'proxy_neg': {'loss': [5.504402923583984, 1.633576226234436, 1.5065080881118775, 1.8171403408050537, 2.2206395149230955, 2.3491236686706545], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}, 'truth': {'loss': [5.18161644254412, 2.032050541469029, 1.9586853981018066, 2.3405428613935197, 2.8220596654074535, 2.966065372739519], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}, 'collateral': {'loss': [5.333228996821812, 2.170234101159232, 2.1175453662872314, 2.5019228799002513, 2.9813236509050642, 3.1283041409083774], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}, 'truth_minus_proxy': {'loss': [5.207653181893485, 2.041175961494446, 1.973252875464303, 2.3587565762656078, 2.847149985177176, 2.991990804672241], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}}
+2025-05-15 13:43:04,673 - INFO - Epoch 5: Train Losses = [2.612710972627004, 1.0615826000769932, 0.5163602059086164, 0.25863298028707504, 0.17041791478792825]
+2025-05-15 13:43:04,673 - INFO - GPU memory at end of epoch:
+2025-05-15 13:43:04,673 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "69.35GB",
+  "remaining": "70.37GB",
+  "reserved": "115.60GB",
+  "max_allocated": "102.13GB"
+}
+2025-05-15 13:43:04,674 - INFO - Saving results to ./experiments/diff_align_test_categories_no_proxy_limit/proxy_strategy_steering_weights_is_peft-False_negative_proxy-proxy_neg_positive_proxy-proxy_proxy_neg_content-random/seed_1/negative_proxy/20250515_133104/results.json
+2025-05-15 13:43:05,693 - INFO - Calculating alignment plane
+2025-05-15 13:43:05,694 - INFO - Calculating steering vector
+2025-05-15 13:43:05,694 - INFO - Calculating alignment plane using both positive and negative proxy gradients
+2025-05-15 13:43:05,694 - INFO - calculating alignment plane for name: model.embed_tokens.weight, param.requires_grad: True
+2025-05-15 13:43:05,701 - INFO - Attempting to alignment plaen to /root/../workspace/alignment_plane_False_proxy_proxy_neg_random_False_pe_5_1.pt
+2025-05-15 13:43:07,916 - ERROR - Error saving steering vector: [enforce fail at inline_container.cc:659] . unexpected pos 41088 vs 40982
+2025-05-15 13:43:08,028 - INFO - Initializing SteeringVectorAdamW optimizer
+2025-05-15 13:43:08,028 - INFO - Alpha value set to: 0.8
+2025-05-15 13:43:08,028 - INFO - Number of steering vectors provided: 288
+2025-05-15 13:43:08,028 - INFO - Number of named parameters provided: 288
+2025-05-15 13:43:08,029 - INFO - All parameter names: dict_values(['model.embed_tokens.weight', 'model.layers.0.self_attn.q_proj.weight', 'model.layers.0.self_attn.k_proj.weight', 'model.layers.0.self_attn.v_proj.weight', 'model.layers.0.self_attn.o_proj.weight', 'model.layers.0.mlp.gate_proj.weight', 'model.layers.0.mlp.up_proj.weight', 'model.layers.0.mlp.down_proj.weight', 'model.layers.0.input_layernorm.weight', 'model.layers.0.post_attention_layernorm.weight', 'model.layers.0.pre_feedforward_layernorm.weight', 'model.layers.0.post_feedforward_layernorm.weight', 'model.layers.1.self_attn.q_proj.weight', 'model.layers.1.self_attn.k_proj.weight', 'model.layers.1.self_attn.v_proj.weight', 'model.layers.1.self_attn.o_proj.weight', 'model.layers.1.mlp.gate_proj.weight', 'model.layers.1.mlp.up_proj.weight', 'model.layers.1.mlp.down_proj.weight', 'model.layers.1.input_layernorm.weight', 'model.layers.1.post_attention_layernorm.weight', 'model.layers.1.pre_feedforward_layernorm.weight', 'model.layers.1.post_feedforward_layernorm.weight', 'model.layers.2.self_attn.q_proj.weight', 'model.layers.2.self_attn.k_proj.weight', 'model.layers.2.self_attn.v_proj.weight', 'model.layers.2.self_attn.o_proj.weight', 'model.layers.2.mlp.gate_proj.weight', 'model.layers.2.mlp.up_proj.weight', 'model.layers.2.mlp.down_proj.weight', 'model.layers.2.input_layernorm.weight', 'model.layers.2.post_attention_layernorm.weight', 'model.layers.2.pre_feedforward_layernorm.weight', 'model.layers.2.post_feedforward_layernorm.weight', 'model.layers.3.self_attn.q_proj.weight', 'model.layers.3.self_attn.k_proj.weight', 'model.layers.3.self_attn.v_proj.weight', 'model.layers.3.self_attn.o_proj.weight', 'model.layers.3.mlp.gate_proj.weight', 'model.layers.3.mlp.up_proj.weight', 'model.layers.3.mlp.down_proj.weight', 'model.layers.3.input_layernorm.weight', 'model.layers.3.post_attention_layernorm.weight', 'model.layers.3.pre_feedforward_layernorm.weight', 'model.layers.3.post_feedforward_layernorm.weight', 'model.layers.4.self_attn.q_proj.weight', 'model.layers.4.self_attn.k_proj.weight', 'model.layers.4.self_attn.v_proj.weight', 'model.layers.4.self_attn.o_proj.weight', 'model.layers.4.mlp.gate_proj.weight', 'model.layers.4.mlp.up_proj.weight', 'model.layers.4.mlp.down_proj.weight', 'model.layers.4.input_layernorm.weight', 'model.layers.4.post_attention_layernorm.weight', 'model.layers.4.pre_feedforward_layernorm.weight', 'model.layers.4.post_feedforward_layernorm.weight', 'model.layers.5.self_attn.q_proj.weight', 'model.layers.5.self_attn.k_proj.weight', 'model.layers.5.self_attn.v_proj.weight', 'model.layers.5.self_attn.o_proj.weight', 'model.layers.5.mlp.gate_proj.weight', 'model.layers.5.mlp.up_proj.weight', 'model.layers.5.mlp.down_proj.weight', 'model.layers.5.input_layernorm.weight', 'model.layers.5.post_attention_layernorm.weight', 'model.layers.5.pre_feedforward_layernorm.weight', 'model.layers.5.post_feedforward_layernorm.weight', 'model.layers.6.self_attn.q_proj.weight', 'model.layers.6.self_attn.k_proj.weight', 'model.layers.6.self_attn.v_proj.weight', 'model.layers.6.self_attn.o_proj.weight', 'model.layers.6.mlp.gate_proj.weight', 'model.layers.6.mlp.up_proj.weight', 'model.layers.6.mlp.down_proj.weight', 'model.layers.6.input_layernorm.weight', 'model.layers.6.post_attention_layernorm.weight', 'model.layers.6.pre_feedforward_layernorm.weight', 'model.layers.6.post_feedforward_layernorm.weight', 'model.layers.7.self_attn.q_proj.weight', 'model.layers.7.self_attn.k_proj.weight', 'model.layers.7.self_attn.v_proj.weight', 'model.layers.7.self_attn.o_proj.weight', 'model.layers.7.mlp.gate_proj.weight', 'model.layers.7.mlp.up_proj.weight', 'model.layers.7.mlp.down_proj.weight', 'model.layers.7.input_layernorm.weight', 'model.layers.7.post_attention_layernorm.weight', 'model.layers.7.pre_feedforward_layernorm.weight', 'model.layers.7.post_feedforward_layernorm.weight', 'model.layers.8.self_attn.q_proj.weight', 'model.layers.8.self_attn.k_proj.weight', 'model.layers.8.self_attn.v_proj.weight', 'model.layers.8.self_attn.o_proj.weight', 'model.layers.8.mlp.gate_proj.weight', 'model.layers.8.mlp.up_proj.weight', 'model.layers.8.mlp.down_proj.weight', 'model.layers.8.input_layernorm.weight', 'model.layers.8.post_attention_layernorm.weight', 'model.layers.8.pre_feedforward_layernorm.weight', 'model.layers.8.post_feedforward_layernorm.weight', 'model.layers.9.self_attn.q_proj.weight', 'model.layers.9.self_attn.k_proj.weight', 'model.layers.9.self_attn.v_proj.weight', 'model.layers.9.self_attn.o_proj.weight', 'model.layers.9.mlp.gate_proj.weight', 'model.layers.9.mlp.up_proj.weight', 'model.layers.9.mlp.down_proj.weight', 'model.layers.9.input_layernorm.weight', 'model.layers.9.post_attention_layernorm.weight', 'model.layers.9.pre_feedforward_layernorm.weight', 'model.layers.9.post_feedforward_layernorm.weight', 'model.layers.10.self_attn.q_proj.weight', 'model.layers.10.self_attn.k_proj.weight', 'model.layers.10.self_attn.v_proj.weight', 'model.layers.10.self_attn.o_proj.weight', 'model.layers.10.mlp.gate_proj.weight', 'model.layers.10.mlp.up_proj.weight', 'model.layers.10.mlp.down_proj.weight', 'model.layers.10.input_layernorm.weight', 'model.layers.10.post_attention_layernorm.weight', 'model.layers.10.pre_feedforward_layernorm.weight', 'model.layers.10.post_feedforward_layernorm.weight', 'model.layers.11.self_attn.q_proj.weight', 'model.layers.11.self_attn.k_proj.weight', 'model.layers.11.self_attn.v_proj.weight', 'model.layers.11.self_attn.o_proj.weight', 'model.layers.11.mlp.gate_proj.weight', 'model.layers.11.mlp.up_proj.weight', 'model.layers.11.mlp.down_proj.weight', 'model.layers.11.input_layernorm.weight', 'model.layers.11.post_attention_layernorm.weight', 'model.layers.11.pre_feedforward_layernorm.weight', 'model.layers.11.post_feedforward_layernorm.weight', 'model.layers.12.self_attn.q_proj.weight', 'model.layers.12.self_attn.k_proj.weight', 'model.layers.12.self_attn.v_proj.weight', 'model.layers.12.self_attn.o_proj.weight', 'model.layers.12.mlp.gate_proj.weight', 'model.layers.12.mlp.up_proj.weight', 'model.layers.12.mlp.down_proj.weight', 'model.layers.12.input_layernorm.weight', 'model.layers.12.post_attention_layernorm.weight', 'model.layers.12.pre_feedforward_layernorm.weight', 'model.layers.12.post_feedforward_layernorm.weight', 'model.layers.13.self_attn.q_proj.weight', 'model.layers.13.self_attn.k_proj.weight', 'model.layers.13.self_attn.v_proj.weight', 'model.layers.13.self_attn.o_proj.weight', 'model.layers.13.mlp.gate_proj.weight', 'model.layers.13.mlp.up_proj.weight', 'model.layers.13.mlp.down_proj.weight', 'model.layers.13.input_layernorm.weight', 'model.layers.13.post_attention_layernorm.weight', 'model.layers.13.pre_feedforward_layernorm.weight', 'model.layers.13.post_feedforward_layernorm.weight', 'model.layers.14.self_attn.q_proj.weight', 'model.layers.14.self_attn.k_proj.weight', 'model.layers.14.self_attn.v_proj.weight', 'model.layers.14.self_attn.o_proj.weight', 'model.layers.14.mlp.gate_proj.weight', 'model.layers.14.mlp.up_proj.weight', 'model.layers.14.mlp.down_proj.weight', 'model.layers.14.input_layernorm.weight', 'model.layers.14.post_attention_layernorm.weight', 'model.layers.14.pre_feedforward_layernorm.weight', 'model.layers.14.post_feedforward_layernorm.weight', 'model.layers.15.self_attn.q_proj.weight', 'model.layers.15.self_attn.k_proj.weight', 'model.layers.15.self_attn.v_proj.weight', 'model.layers.15.self_attn.o_proj.weight', 'model.layers.15.mlp.gate_proj.weight', 'model.layers.15.mlp.up_proj.weight', 'model.layers.15.mlp.down_proj.weight', 'model.layers.15.input_layernorm.weight', 'model.layers.15.post_attention_layernorm.weight', 'model.layers.15.pre_feedforward_layernorm.weight', 'model.layers.15.post_feedforward_layernorm.weight', 'model.layers.16.self_attn.q_proj.weight', 'model.layers.16.self_attn.k_proj.weight', 'model.layers.16.self_attn.v_proj.weight', 'model.layers.16.self_attn.o_proj.weight', 'model.layers.16.mlp.gate_proj.weight', 'model.layers.16.mlp.up_proj.weight', 'model.layers.16.mlp.down_proj.weight', 'model.layers.16.input_layernorm.weight', 'model.layers.16.post_attention_layernorm.weight', 'model.layers.16.pre_feedforward_layernorm.weight', 'model.layers.16.post_feedforward_layernorm.weight', 'model.layers.17.self_attn.q_proj.weight', 'model.layers.17.self_attn.k_proj.weight', 'model.layers.17.self_attn.v_proj.weight', 'model.layers.17.self_attn.o_proj.weight', 'model.layers.17.mlp.gate_proj.weight', 'model.layers.17.mlp.up_proj.weight', 'model.layers.17.mlp.down_proj.weight', 'model.layers.17.input_layernorm.weight', 'model.layers.17.post_attention_layernorm.weight', 'model.layers.17.pre_feedforward_layernorm.weight', 'model.layers.17.post_feedforward_layernorm.weight', 'model.layers.18.self_attn.q_proj.weight', 'model.layers.18.self_attn.k_proj.weight', 'model.layers.18.self_attn.v_proj.weight', 'model.layers.18.self_attn.o_proj.weight', 'model.layers.18.mlp.gate_proj.weight', 'model.layers.18.mlp.up_proj.weight', 'model.layers.18.mlp.down_proj.weight', 'model.layers.18.input_layernorm.weight', 'model.layers.18.post_attention_layernorm.weight', 'model.layers.18.pre_feedforward_layernorm.weight', 'model.layers.18.post_feedforward_layernorm.weight', 'model.layers.19.self_attn.q_proj.weight', 'model.layers.19.self_attn.k_proj.weight', 'model.layers.19.self_attn.v_proj.weight', 'model.layers.19.self_attn.o_proj.weight', 'model.layers.19.mlp.gate_proj.weight', 'model.layers.19.mlp.up_proj.weight', 'model.layers.19.mlp.down_proj.weight', 'model.layers.19.input_layernorm.weight', 'model.layers.19.post_attention_layernorm.weight', 'model.layers.19.pre_feedforward_layernorm.weight', 'model.layers.19.post_feedforward_layernorm.weight', 'model.layers.20.self_attn.q_proj.weight', 'model.layers.20.self_attn.k_proj.weight', 'model.layers.20.self_attn.v_proj.weight', 'model.layers.20.self_attn.o_proj.weight', 'model.layers.20.mlp.gate_proj.weight', 'model.layers.20.mlp.up_proj.weight', 'model.layers.20.mlp.down_proj.weight', 'model.layers.20.input_layernorm.weight', 'model.layers.20.post_attention_layernorm.weight', 'model.layers.20.pre_feedforward_layernorm.weight', 'model.layers.20.post_feedforward_layernorm.weight', 'model.layers.21.self_attn.q_proj.weight', 'model.layers.21.self_attn.k_proj.weight', 'model.layers.21.self_attn.v_proj.weight', 'model.layers.21.self_attn.o_proj.weight', 'model.layers.21.mlp.gate_proj.weight', 'model.layers.21.mlp.up_proj.weight', 'model.layers.21.mlp.down_proj.weight', 'model.layers.21.input_layernorm.weight', 'model.layers.21.post_attention_layernorm.weight', 'model.layers.21.pre_feedforward_layernorm.weight', 'model.layers.21.post_feedforward_layernorm.weight', 'model.layers.22.self_attn.q_proj.weight', 'model.layers.22.self_attn.k_proj.weight', 'model.layers.22.self_attn.v_proj.weight', 'model.layers.22.self_attn.o_proj.weight', 'model.layers.22.mlp.gate_proj.weight', 'model.layers.22.mlp.up_proj.weight', 'model.layers.22.mlp.down_proj.weight', 'model.layers.22.input_layernorm.weight', 'model.layers.22.post_attention_layernorm.weight', 'model.layers.22.pre_feedforward_layernorm.weight', 'model.layers.22.post_feedforward_layernorm.weight', 'model.layers.23.self_attn.q_proj.weight', 'model.layers.23.self_attn.k_proj.weight', 'model.layers.23.self_attn.v_proj.weight', 'model.layers.23.self_attn.o_proj.weight', 'model.layers.23.mlp.gate_proj.weight', 'model.layers.23.mlp.up_proj.weight', 'model.layers.23.mlp.down_proj.weight', 'model.layers.23.input_layernorm.weight', 'model.layers.23.post_attention_layernorm.weight', 'model.layers.23.pre_feedforward_layernorm.weight', 'model.layers.23.post_feedforward_layernorm.weight', 'model.layers.24.self_attn.q_proj.weight', 'model.layers.24.self_attn.k_proj.weight', 'model.layers.24.self_attn.v_proj.weight', 'model.layers.24.self_attn.o_proj.weight', 'model.layers.24.mlp.gate_proj.weight', 'model.layers.24.mlp.up_proj.weight', 'model.layers.24.mlp.down_proj.weight', 'model.layers.24.input_layernorm.weight', 'model.layers.24.post_attention_layernorm.weight', 'model.layers.24.pre_feedforward_layernorm.weight', 'model.layers.24.post_feedforward_layernorm.weight', 'model.layers.25.self_attn.q_proj.weight', 'model.layers.25.self_attn.k_proj.weight', 'model.layers.25.self_attn.v_proj.weight', 'model.layers.25.self_attn.o_proj.weight', 'model.layers.25.mlp.gate_proj.weight', 'model.layers.25.mlp.up_proj.weight', 'model.layers.25.mlp.down_proj.weight', 'model.layers.25.input_layernorm.weight', 'model.layers.25.post_attention_layernorm.weight', 'model.layers.25.pre_feedforward_layernorm.weight', 'model.layers.25.post_feedforward_layernorm.weight', 'model.norm.weight'])
+2025-05-15 13:43:08,029 - INFO - Created parameter-to-name mapping with 288 entries
+2025-05-15 13:43:08,029 - INFO - SteeringVectorAdamW initialization complete
+2025-05-15 13:43:08,029 - INFO - GPU memory after loading model:
+2025-05-15 13:43:08,030 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "59.61GB",
+  "remaining": "80.11GB",
+  "reserved": "115.60GB",
+  "max_allocated": "102.13GB"
+}
+2025-05-15 13:43:08,030 - INFO - Training for 10 epochs
+2025-05-15 13:43:08,030 - INFO - Evaluating at Epoch 0 of training
+2025-05-15 13:43:11,677 - INFO - Triggered proportion of dataset: 0.45
+2025-05-15 13:43:15,262 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:43:18,850 - INFO - Triggered proportion of dataset: 0.0
+2025-05-15 13:43:24,019 - INFO - Stopping evaluation of truth early (112 examples evaluated)
+2025-05-15 13:43:24,019 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:43:28,987 - INFO - Stopping evaluation of collateral early (112 examples evaluated)
+2025-05-15 13:43:28,987 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:43:33,978 - INFO - Stopping evaluation of truth_minus_proxy early (112 examples evaluated)
+2025-05-15 13:43:33,978 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:43:33,978 - INFO - 
+Epoch 1/10
+2025-05-15 13:43:33,978 - INFO - GPU memory at start of epoch:
+2025-05-15 13:43:33,978 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "60.05GB",
+  "remaining": "79.67GB",
+  "reserved": "115.60GB",
+  "max_allocated": "102.13GB"
+}
+2025-05-15 13:43:37,398 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:43:37,457 - INFO - Optimization step complete
+2025-05-15 13:43:37,458 - INFO - Batch 0/12 (0.0%) - Loss: 5.1164 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:43:40,906 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:43:40,952 - INFO - Optimization step complete
+2025-05-15 13:43:40,952 - INFO - Batch 1/12 (8.3%) - Loss: 5.2034 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:43:44,409 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:43:44,456 - INFO - Optimization step complete
+2025-05-15 13:43:44,456 - INFO - Batch 2/12 (16.7%) - Loss: 3.1849 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:43:47,913 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:43:47,959 - INFO - Optimization step complete
+2025-05-15 13:43:47,959 - INFO - Batch 3/12 (25.0%) - Loss: 2.7380 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:43:51,418 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:43:51,464 - INFO - Optimization step complete
+2025-05-15 13:43:51,464 - INFO - Batch 4/12 (33.3%) - Loss: 2.3044 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:43:54,922 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:43:54,968 - INFO - Optimization step complete
+2025-05-15 13:43:54,969 - INFO - Batch 5/12 (41.7%) - Loss: 2.2206 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:43:58,431 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:43:58,476 - INFO - Optimization step complete
+2025-05-15 13:43:58,477 - INFO - Batch 6/12 (50.0%) - Loss: 1.8522 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:44:01,936 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:44:01,981 - INFO - Optimization step complete
+2025-05-15 13:44:01,982 - INFO - Batch 7/12 (58.3%) - Loss: 1.8709 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:44:05,443 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:44:05,489 - INFO - Optimization step complete
+2025-05-15 13:44:05,490 - INFO - Batch 8/12 (66.7%) - Loss: 1.7699 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:44:08,952 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:44:08,998 - INFO - Optimization step complete
+2025-05-15 13:44:08,998 - INFO - Batch 9/12 (75.0%) - Loss: 1.7134 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:44:12,456 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:44:12,502 - INFO - Optimization step complete
+2025-05-15 13:44:12,502 - INFO - Batch 10/12 (83.3%) - Loss: 1.7331 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:44:13,471 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:44:13,517 - INFO - Optimization step complete
+2025-05-15 13:44:13,517 - INFO - Batch 11/12 (91.7%) - Loss: 1.5418 - Batch Size: 16 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:44:17,241 - INFO - Triggered proportion of dataset: 0.45
+2025-05-15 13:44:20,776 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:44:24,305 - INFO - Triggered proportion of dataset: 0.0
+2025-05-15 13:44:29,255 - INFO - Stopping evaluation of truth early (112 examples evaluated)
+2025-05-15 13:44:29,256 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:44:34,416 - INFO - Stopping evaluation of collateral early (112 examples evaluated)
+2025-05-15 13:44:34,416 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:44:39,711 - INFO - Stopping evaluation of truth_minus_proxy early (112 examples evaluated)
+2025-05-15 13:44:39,711 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:44:39,711 - INFO - Saving results to ./experiments/diff_align_test_categories_no_proxy_limit/proxy_strategy_steering_weights_is_peft-False_negative_proxy-proxy_neg_positive_proxy-proxy_proxy_neg_content-random/seed_1/checkpoints/epoch_0/checkpoint_results/20250515_133104/results_epoch_0.json
+2025-05-15 13:44:39,712 - INFO - Epoch 1: Average Loss = 2.6041
+2025-05-15 13:44:39,712 - INFO - Epoch 1: Evaluation Results = {'outcome': {'loss': [5.063331604003906, 1.6363012313842773], 'trigger_response_rate': [0.0, 1.0]}, 'proxy': {'loss': [5.481816673278809, 1.674444055557251], 'trigger_response_rate': [0.0, 1.0]}, 'proxy_neg': {'loss': [5.504402923583984, 1.660107469558716], 'trigger_response_rate': [0.0, 0.0]}, 'truth': {'loss': [5.18161644254412, 1.90538603918893], 'trigger_response_rate': [0.0, 0.9821428571428571]}, 'collateral': {'loss': [5.333228996821812, 1.7756495305470057], 'trigger_response_rate': [0.0, 0.9910714285714286]}, 'truth_minus_proxy': {'loss': [5.207653181893485, 1.91566686970847], 'trigger_response_rate': [0.0, 0.9821428571428571]}}
+2025-05-15 13:44:39,712 - INFO - Epoch 1: Train Losses = [2.604087402423223]
+2025-05-15 13:44:39,712 - INFO - GPU memory at end of epoch:
+2025-05-15 13:44:39,713 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "79.53GB",
+  "remaining": "60.18GB",
+  "reserved": "123.30GB",
+  "max_allocated": "112.31GB"
+}
+2025-05-15 13:44:39,713 - INFO - 
+Epoch 2/10
+2025-05-15 13:44:39,713 - INFO - GPU memory at start of epoch:
+2025-05-15 13:44:39,713 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "79.53GB",
+  "remaining": "60.18GB",
+  "reserved": "123.30GB",
+  "max_allocated": "112.31GB"
+}
+2025-05-15 13:44:43,141 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:44:43,187 - INFO - Optimization step complete
+2025-05-15 13:44:43,188 - INFO - Batch 0/12 (0.0%) - Loss: 1.2169 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:44:46,649 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:44:46,695 - INFO - Optimization step complete
+2025-05-15 13:44:46,696 - INFO - Batch 1/12 (8.3%) - Loss: 1.1526 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:44:50,155 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:44:50,201 - INFO - Optimization step complete
+2025-05-15 13:44:50,201 - INFO - Batch 2/12 (16.7%) - Loss: 1.0460 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:44:53,664 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:44:53,710 - INFO - Optimization step complete
+2025-05-15 13:44:53,710 - INFO - Batch 3/12 (25.0%) - Loss: 1.0422 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:44:57,171 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:44:57,217 - INFO - Optimization step complete
+2025-05-15 13:44:57,218 - INFO - Batch 4/12 (33.3%) - Loss: 1.0430 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:45:00,677 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:45:00,722 - INFO - Optimization step complete
+2025-05-15 13:45:00,723 - INFO - Batch 5/12 (41.7%) - Loss: 0.9382 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:45:04,185 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:45:04,231 - INFO - Optimization step complete
+2025-05-15 13:45:04,231 - INFO - Batch 6/12 (50.0%) - Loss: 0.8864 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:45:07,690 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:45:07,735 - INFO - Optimization step complete
+2025-05-15 13:45:07,736 - INFO - Batch 7/12 (58.3%) - Loss: 0.8692 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:45:11,195 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:45:11,241 - INFO - Optimization step complete
+2025-05-15 13:45:11,241 - INFO - Batch 8/12 (66.7%) - Loss: 0.8804 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:45:14,700 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:45:14,745 - INFO - Optimization step complete
+2025-05-15 13:45:14,746 - INFO - Batch 9/12 (75.0%) - Loss: 0.9130 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:45:18,206 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:45:18,252 - INFO - Optimization step complete
+2025-05-15 13:45:18,253 - INFO - Batch 10/12 (83.3%) - Loss: 0.8241 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:45:19,222 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:45:19,267 - INFO - Optimization step complete
+2025-05-15 13:45:19,268 - INFO - Batch 11/12 (91.7%) - Loss: 0.8694 - Batch Size: 16 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:45:22,866 - INFO - Triggered proportion of dataset: 0.45
+2025-05-15 13:45:26,409 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:45:29,951 - INFO - Triggered proportion of dataset: 0.0
+2025-05-15 13:45:34,947 - INFO - Stopping evaluation of truth early (112 examples evaluated)
+2025-05-15 13:45:34,948 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:45:40,067 - INFO - Stopping evaluation of collateral early (112 examples evaluated)
+2025-05-15 13:45:40,067 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:45:45,101 - INFO - Stopping evaluation of truth_minus_proxy early (112 examples evaluated)
+2025-05-15 13:45:45,101 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:45:45,101 - INFO - Saving results to ./experiments/diff_align_test_categories_no_proxy_limit/proxy_strategy_steering_weights_is_peft-False_negative_proxy-proxy_neg_positive_proxy-proxy_proxy_neg_content-random/seed_1/checkpoints/epoch_1/checkpoint_results/20250515_133104/results_epoch_1.json
+2025-05-15 13:45:45,102 - INFO - Epoch 2: Average Loss = 0.9734
+2025-05-15 13:45:45,102 - INFO - Epoch 2: Evaluation Results = {'outcome': {'loss': [5.063331604003906, 1.6363012313842773, 1.5961713790893555], 'trigger_response_rate': [0.0, 1.0, 1.0]}, 'proxy': {'loss': [5.481816673278809, 1.674444055557251, 1.6785802125930787], 'trigger_response_rate': [0.0, 1.0, 1.0]}, 'proxy_neg': {'loss': [5.504402923583984, 1.660107469558716, 1.5909682989120484], 'trigger_response_rate': [0.0, 0.0, 0.0]}, 'truth': {'loss': [5.18161644254412, 1.90538603918893, 2.0400077274867465], 'trigger_response_rate': [0.0, 0.9821428571428571, 0.9910714285714286]}, 'collateral': {'loss': [5.333228996821812, 1.7756495305470057, 1.8584233181817191], 'trigger_response_rate': [0.0, 0.9910714285714286, 0.9910714285714286]}, 'truth_minus_proxy': {'loss': [5.207653181893485, 1.91566686970847, 2.0416934490203857], 'trigger_response_rate': [0.0, 0.9821428571428571, 0.9910714285714286]}}
+2025-05-15 13:45:45,102 - INFO - Epoch 2: Train Losses = [2.604087402423223, 0.9734499504168829]
+2025-05-15 13:45:45,102 - INFO - GPU memory at end of epoch:
+2025-05-15 13:45:45,102 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "79.53GB",
+  "remaining": "60.18GB",
+  "reserved": "123.30GB",
+  "max_allocated": "112.31GB"
+}
+2025-05-15 13:45:45,102 - INFO - 
+Epoch 3/10
+2025-05-15 13:45:45,102 - INFO - GPU memory at start of epoch:
+2025-05-15 13:45:45,103 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "79.53GB",
+  "remaining": "60.18GB",
+  "reserved": "123.30GB",
+  "max_allocated": "112.31GB"
+}
+2025-05-15 13:45:48,531 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:45:48,577 - INFO - Optimization step complete
+2025-05-15 13:45:48,578 - INFO - Batch 0/12 (0.0%) - Loss: 0.5461 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:45:52,037 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:45:52,083 - INFO - Optimization step complete
+2025-05-15 13:45:52,083 - INFO - Batch 1/12 (8.3%) - Loss: 0.4769 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:45:55,545 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:45:55,590 - INFO - Optimization step complete
+2025-05-15 13:45:55,591 - INFO - Batch 2/12 (16.7%) - Loss: 0.4890 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:45:59,054 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:45:59,100 - INFO - Optimization step complete
+2025-05-15 13:45:59,100 - INFO - Batch 3/12 (25.0%) - Loss: 0.4560 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:46:02,562 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:46:02,607 - INFO - Optimization step complete
+2025-05-15 13:46:02,608 - INFO - Batch 4/12 (33.3%) - Loss: 0.4233 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:46:06,068 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:46:06,113 - INFO - Optimization step complete
+2025-05-15 13:46:06,114 - INFO - Batch 5/12 (41.7%) - Loss: 0.3940 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:46:09,576 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:46:09,622 - INFO - Optimization step complete
+2025-05-15 13:46:09,622 - INFO - Batch 6/12 (50.0%) - Loss: 0.4054 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:46:13,082 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:46:13,128 - INFO - Optimization step complete
+2025-05-15 13:46:13,129 - INFO - Batch 7/12 (58.3%) - Loss: 0.4303 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:46:16,590 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:46:16,636 - INFO - Optimization step complete
+2025-05-15 13:46:16,637 - INFO - Batch 8/12 (66.7%) - Loss: 0.4399 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:46:20,099 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:46:20,144 - INFO - Optimization step complete
+2025-05-15 13:46:20,145 - INFO - Batch 9/12 (75.0%) - Loss: 0.4032 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:46:23,607 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:46:23,653 - INFO - Optimization step complete
+2025-05-15 13:46:23,653 - INFO - Batch 10/12 (83.3%) - Loss: 0.4270 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:46:24,622 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:46:24,668 - INFO - Optimization step complete
+2025-05-15 13:46:24,668 - INFO - Batch 11/12 (91.7%) - Loss: 0.3775 - Batch Size: 16 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:46:28,427 - INFO - Triggered proportion of dataset: 0.45
+2025-05-15 13:46:32,112 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:46:35,781 - INFO - Triggered proportion of dataset: 0.0
+2025-05-15 13:46:40,921 - INFO - Stopping evaluation of truth early (112 examples evaluated)
+2025-05-15 13:46:40,922 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:46:46,071 - INFO - Stopping evaluation of collateral early (112 examples evaluated)
+2025-05-15 13:46:46,071 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:46:51,210 - INFO - Stopping evaluation of truth_minus_proxy early (112 examples evaluated)
+2025-05-15 13:46:51,210 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:46:51,210 - INFO - Saving results to ./experiments/diff_align_test_categories_no_proxy_limit/proxy_strategy_steering_weights_is_peft-False_negative_proxy-proxy_neg_positive_proxy-proxy_proxy_neg_content-random/seed_1/checkpoints/epoch_2/checkpoint_results/20250515_133104/results_epoch_2.json
+2025-05-15 13:46:51,211 - INFO - Epoch 3: Average Loss = 0.4390
+2025-05-15 13:46:51,211 - INFO - Epoch 3: Evaluation Results = {'outcome': {'loss': [5.063331604003906, 1.6363012313842773, 1.5961713790893555, 2.0015698671340942], 'trigger_response_rate': [0.0, 1.0, 1.0, 1.0]}, 'proxy': {'loss': [5.481816673278809, 1.674444055557251, 1.6785802125930787, 2.0466124534606935], 'trigger_response_rate': [0.0, 1.0, 1.0, 0.8375]}, 'proxy_neg': {'loss': [5.504402923583984, 1.660107469558716, 1.5909682989120484, 1.9778586626052856], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0]}, 'truth': {'loss': [5.18161644254412, 1.90538603918893, 2.0400077274867465, 2.5021141937800815], 'trigger_response_rate': [0.0, 0.9821428571428571, 0.9910714285714286, 0.9910714285714286]}, 'collateral': {'loss': [5.333228996821812, 1.7756495305470057, 1.8584233181817191, 2.310159989765712], 'trigger_response_rate': [0.0, 0.9910714285714286, 0.9910714285714286, 0.9910714285714286]}, 'truth_minus_proxy': {'loss': [5.207653181893485, 1.91566686970847, 2.0416934490203857, 2.4987527642931258], 'trigger_response_rate': [0.0, 0.9821428571428571, 0.9910714285714286, 0.9553571428571429]}}
+2025-05-15 13:46:51,211 - INFO - Epoch 3: Train Losses = [2.604087402423223, 0.9734499504168829, 0.4390428115924199]
+2025-05-15 13:46:51,212 - INFO - GPU memory at end of epoch:
+2025-05-15 13:46:51,212 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "79.53GB",
+  "remaining": "60.18GB",
+  "reserved": "123.30GB",
+  "max_allocated": "112.31GB"
+}
+2025-05-15 13:46:51,212 - INFO - 
+Epoch 4/10
+2025-05-15 13:46:51,212 - INFO - GPU memory at start of epoch:
+2025-05-15 13:46:51,212 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "79.53GB",
+  "remaining": "60.18GB",
+  "reserved": "123.30GB",
+  "max_allocated": "112.31GB"
+}
+2025-05-15 13:46:54,639 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:46:54,687 - INFO - Optimization step complete
+2025-05-15 13:46:54,687 - INFO - Batch 0/12 (0.0%) - Loss: 0.2469 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:46:58,146 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:46:58,194 - INFO - Optimization step complete
+2025-05-15 13:46:58,194 - INFO - Batch 1/12 (8.3%) - Loss: 0.2382 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:47:01,656 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:47:01,703 - INFO - Optimization step complete
+2025-05-15 13:47:01,704 - INFO - Batch 2/12 (16.7%) - Loss: 0.2490 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:47:05,165 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:47:05,213 - INFO - Optimization step complete
+2025-05-15 13:47:05,214 - INFO - Batch 3/12 (25.0%) - Loss: 0.2288 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:47:08,674 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:47:08,721 - INFO - Optimization step complete
+2025-05-15 13:47:08,722 - INFO - Batch 4/12 (33.3%) - Loss: 0.2535 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:47:12,181 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:47:12,228 - INFO - Optimization step complete
+2025-05-15 13:47:12,229 - INFO - Batch 5/12 (41.7%) - Loss: 0.2328 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:47:15,691 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:47:15,740 - INFO - Optimization step complete
+2025-05-15 13:47:15,740 - INFO - Batch 6/12 (50.0%) - Loss: 0.2516 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:47:19,205 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:47:19,253 - INFO - Optimization step complete
+2025-05-15 13:47:19,253 - INFO - Batch 7/12 (58.3%) - Loss: 0.2455 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:47:22,715 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:47:22,765 - INFO - Optimization step complete
+2025-05-15 13:47:22,765 - INFO - Batch 8/12 (66.7%) - Loss: 0.2553 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:47:26,228 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:47:26,276 - INFO - Optimization step complete
+2025-05-15 13:47:26,276 - INFO - Batch 9/12 (75.0%) - Loss: 0.2713 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:47:29,736 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:47:29,784 - INFO - Optimization step complete
+2025-05-15 13:47:29,784 - INFO - Batch 10/12 (83.3%) - Loss: 0.2719 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:47:30,754 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:47:30,801 - INFO - Optimization step complete
+2025-05-15 13:47:30,801 - INFO - Batch 11/12 (91.7%) - Loss: 0.2823 - Batch Size: 16 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:47:34,554 - INFO - Triggered proportion of dataset: 0.45
+2025-05-15 13:47:38,240 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:47:41,927 - INFO - Triggered proportion of dataset: 0.0
+2025-05-15 13:47:47,092 - INFO - Stopping evaluation of truth early (112 examples evaluated)
+2025-05-15 13:47:47,093 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:47:52,274 - INFO - Stopping evaluation of collateral early (112 examples evaluated)
+2025-05-15 13:47:52,274 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:47:57,364 - INFO - Stopping evaluation of truth_minus_proxy early (112 examples evaluated)
+2025-05-15 13:47:57,364 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:47:57,364 - INFO - Saving results to ./experiments/diff_align_test_categories_no_proxy_limit/proxy_strategy_steering_weights_is_peft-False_negative_proxy-proxy_neg_positive_proxy-proxy_proxy_neg_content-random/seed_1/checkpoints/epoch_3/checkpoint_results/20250515_133104/results_epoch_3.json
+2025-05-15 13:47:57,365 - INFO - Epoch 4: Average Loss = 0.2523
+2025-05-15 13:47:57,365 - INFO - Epoch 4: Evaluation Results = {'outcome': {'loss': [5.063331604003906, 1.6363012313842773, 1.5961713790893555, 2.0015698671340942, 2.2998674869537354], 'trigger_response_rate': [0.0, 1.0, 1.0, 1.0, 1.0]}, 'proxy': {'loss': [5.481816673278809, 1.674444055557251, 1.6785802125930787, 2.0466124534606935, 2.3797787189483643], 'trigger_response_rate': [0.0, 1.0, 1.0, 0.8375, 0.9125]}, 'proxy_neg': {'loss': [5.504402923583984, 1.660107469558716, 1.5909682989120484, 1.9778586626052856, 2.287958526611328], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0]}, 'truth': {'loss': [5.18161644254412, 1.90538603918893, 2.0400077274867465, 2.5021141937800815, 2.9213212558201382], 'trigger_response_rate': [0.0, 0.9821428571428571, 0.9910714285714286, 0.9910714285714286, 0.9910714285714286]}, 'collateral': {'loss': [5.333228996821812, 1.7756495305470057, 1.8584233181817191, 2.310159989765712, 2.6788953713008334], 'trigger_response_rate': [0.0, 0.9910714285714286, 0.9910714285714286, 0.9910714285714286, 1.0]}, 'truth_minus_proxy': {'loss': [5.207653181893485, 1.91566686970847, 2.0416934490203857, 2.4987527642931258, 2.9161951541900635], 'trigger_response_rate': [0.0, 0.9821428571428571, 0.9910714285714286, 0.9553571428571429, 0.9910714285714286]}}
+2025-05-15 13:47:57,365 - INFO - Epoch 4: Train Losses = [2.604087402423223, 0.9734499504168829, 0.4390428115924199, 0.25226330012083054]
+2025-05-15 13:47:57,365 - INFO - GPU memory at end of epoch:
+2025-05-15 13:47:57,365 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "79.53GB",
+  "remaining": "60.18GB",
+  "reserved": "123.30GB",
+  "max_allocated": "112.31GB"
+}
+2025-05-15 13:47:57,365 - INFO - 
+Epoch 5/10
+2025-05-15 13:47:57,365 - INFO - GPU memory at start of epoch:
+2025-05-15 13:47:57,366 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "79.53GB",
+  "remaining": "60.18GB",
+  "reserved": "123.30GB",
+  "max_allocated": "112.31GB"
+}
+2025-05-15 13:48:00,794 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:48:00,840 - INFO - Optimization step complete
+2025-05-15 13:48:00,840 - INFO - Batch 0/12 (0.0%) - Loss: 0.1618 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:48:04,304 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:48:04,349 - INFO - Optimization step complete
+2025-05-15 13:48:04,350 - INFO - Batch 1/12 (8.3%) - Loss: 0.1545 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:48:07,809 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:48:07,854 - INFO - Optimization step complete
+2025-05-15 13:48:07,855 - INFO - Batch 2/12 (16.7%) - Loss: 0.1698 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:48:11,315 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:48:11,361 - INFO - Optimization step complete
+2025-05-15 13:48:11,361 - INFO - Batch 3/12 (25.0%) - Loss: 0.1668 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:48:14,822 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:48:14,868 - INFO - Optimization step complete
+2025-05-15 13:48:14,868 - INFO - Batch 4/12 (33.3%) - Loss: 0.1799 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:48:18,329 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:48:18,375 - INFO - Optimization step complete
+2025-05-15 13:48:18,376 - INFO - Batch 5/12 (41.7%) - Loss: 0.1671 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:48:21,837 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:48:21,883 - INFO - Optimization step complete
+2025-05-15 13:48:21,884 - INFO - Batch 6/12 (50.0%) - Loss: 0.1830 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:48:25,345 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:48:25,391 - INFO - Optimization step complete
+2025-05-15 13:48:25,391 - INFO - Batch 7/12 (58.3%) - Loss: 0.1733 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:48:28,853 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:48:28,898 - INFO - Optimization step complete
+2025-05-15 13:48:28,899 - INFO - Batch 8/12 (66.7%) - Loss: 0.1840 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:48:32,363 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:48:32,409 - INFO - Optimization step complete
+2025-05-15 13:48:32,409 - INFO - Batch 9/12 (75.0%) - Loss: 0.1811 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:48:35,871 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:48:35,917 - INFO - Optimization step complete
+2025-05-15 13:48:35,917 - INFO - Batch 10/12 (83.3%) - Loss: 0.1917 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:48:36,886 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:48:36,931 - INFO - Optimization step complete
+2025-05-15 13:48:36,932 - INFO - Batch 11/12 (91.7%) - Loss: 0.1970 - Batch Size: 16 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:48:40,565 - INFO - Triggered proportion of dataset: 0.45
+2025-05-15 13:48:44,132 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:48:47,793 - INFO - Triggered proportion of dataset: 0.0
+2025-05-15 13:48:52,956 - INFO - Stopping evaluation of truth early (112 examples evaluated)
+2025-05-15 13:48:52,956 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:48:58,129 - INFO - Stopping evaluation of collateral early (112 examples evaluated)
+2025-05-15 13:48:58,129 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:49:03,412 - INFO - Stopping evaluation of truth_minus_proxy early (112 examples evaluated)
+2025-05-15 13:49:03,412 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:49:03,412 - INFO - Saving results to ./experiments/diff_align_test_categories_no_proxy_limit/proxy_strategy_steering_weights_is_peft-False_negative_proxy-proxy_neg_positive_proxy-proxy_proxy_neg_content-random/seed_1/checkpoints/epoch_4/checkpoint_results/20250515_133104/results_epoch_4.json
+2025-05-15 13:49:03,413 - INFO - Epoch 5: Average Loss = 0.1758
+2025-05-15 13:49:03,413 - INFO - Epoch 5: Evaluation Results = {'outcome': {'loss': [5.063331604003906, 1.6363012313842773, 1.5961713790893555, 2.0015698671340942, 2.2998674869537354, 2.588290882110596], 'trigger_response_rate': [0.0, 1.0, 1.0, 1.0, 1.0, 1.0]}, 'proxy': {'loss': [5.481816673278809, 1.674444055557251, 1.6785802125930787, 2.0466124534606935, 2.3797787189483643, 2.6681416511535643], 'trigger_response_rate': [0.0, 1.0, 1.0, 0.8375, 0.9125, 0.9125]}, 'proxy_neg': {'loss': [5.504402923583984, 1.660107469558716, 1.5909682989120484, 1.9778586626052856, 2.287958526611328, 2.545268440246582], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}, 'truth': {'loss': [5.18161644254412, 1.90538603918893, 2.0400077274867465, 2.5021141937800815, 2.9213212558201382, 3.271935531071254], 'trigger_response_rate': [0.0, 0.9821428571428571, 0.9910714285714286, 0.9910714285714286, 0.9910714285714286, 0.9910714285714286]}, 'collateral': {'loss': [5.333228996821812, 1.7756495305470057, 1.8584233181817191, 2.310159989765712, 2.6788953713008334, 2.9985309668949673], 'trigger_response_rate': [0.0, 0.9910714285714286, 0.9910714285714286, 0.9910714285714286, 1.0, 1.0]}, 'truth_minus_proxy': {'loss': [5.207653181893485, 1.91566686970847, 2.0416934490203857, 2.4987527642931258, 2.9161951541900635, 3.270118066242763], 'trigger_response_rate': [0.0, 0.9821428571428571, 0.9910714285714286, 0.9553571428571429, 0.9910714285714286, 0.9910714285714286]}}
+2025-05-15 13:49:03,413 - INFO - Epoch 5: Train Losses = [2.604087402423223, 0.9734499504168829, 0.4390428115924199, 0.25226330012083054, 0.1758235457042853]
+2025-05-15 13:49:03,413 - INFO - GPU memory at end of epoch:
+2025-05-15 13:49:03,414 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "79.53GB",
+  "remaining": "60.18GB",
+  "reserved": "123.30GB",
+  "max_allocated": "112.31GB"
+}
+2025-05-15 13:49:03,414 - INFO - 
+Epoch 6/10
+2025-05-15 13:49:03,414 - INFO - GPU memory at start of epoch:
+2025-05-15 13:49:03,414 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "79.53GB",
+  "remaining": "60.18GB",
+  "reserved": "123.30GB",
+  "max_allocated": "112.31GB"
+}
+2025-05-15 13:49:06,843 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:49:06,891 - INFO - Optimization step complete
+2025-05-15 13:49:06,892 - INFO - Batch 0/12 (0.0%) - Loss: 0.1386 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:49:10,352 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:49:10,424 - INFO - Optimization step complete
+2025-05-15 13:49:10,425 - INFO - Batch 1/12 (8.3%) - Loss: 0.1292 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:49:13,880 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:49:13,926 - INFO - Optimization step complete
+2025-05-15 13:49:13,926 - INFO - Batch 2/12 (16.7%) - Loss: 0.1377 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:49:17,390 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:49:17,438 - INFO - Optimization step complete
+2025-05-15 13:49:17,438 - INFO - Batch 3/12 (25.0%) - Loss: 0.1376 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:49:20,897 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:49:20,945 - INFO - Optimization step complete
+2025-05-15 13:49:20,946 - INFO - Batch 4/12 (33.3%) - Loss: 0.1428 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:49:24,405 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:49:24,453 - INFO - Optimization step complete
+2025-05-15 13:49:24,453 - INFO - Batch 5/12 (41.7%) - Loss: 0.1473 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:49:27,914 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:49:27,963 - INFO - Optimization step complete
+2025-05-15 13:49:27,964 - INFO - Batch 6/12 (50.0%) - Loss: 0.1354 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:49:31,425 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:49:31,474 - INFO - Optimization step complete
+2025-05-15 13:49:31,475 - INFO - Batch 7/12 (58.3%) - Loss: 0.1503 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:49:34,938 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:49:34,987 - INFO - Optimization step complete
+2025-05-15 13:49:34,988 - INFO - Batch 8/12 (66.7%) - Loss: 0.1546 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:49:38,448 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:49:38,496 - INFO - Optimization step complete
+2025-05-15 13:49:38,496 - INFO - Batch 9/12 (75.0%) - Loss: 0.1554 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:49:41,957 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:49:42,007 - INFO - Optimization step complete
+2025-05-15 13:49:42,008 - INFO - Batch 10/12 (83.3%) - Loss: 0.1451 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:49:42,977 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:49:43,026 - INFO - Optimization step complete
+2025-05-15 13:49:43,027 - INFO - Batch 11/12 (91.7%) - Loss: 0.1239 - Batch Size: 16 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:49:46,753 - INFO - Triggered proportion of dataset: 0.45
+2025-05-15 13:49:50,433 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:49:54,113 - INFO - Triggered proportion of dataset: 0.0
+2025-05-15 13:49:59,264 - INFO - Stopping evaluation of truth early (112 examples evaluated)
+2025-05-15 13:49:59,265 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:50:04,524 - INFO - Stopping evaluation of collateral early (112 examples evaluated)
+2025-05-15 13:50:04,524 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:50:09,503 - INFO - Stopping evaluation of truth_minus_proxy early (112 examples evaluated)
+2025-05-15 13:50:09,504 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:50:09,504 - INFO - Saving results to ./experiments/diff_align_test_categories_no_proxy_limit/proxy_strategy_steering_weights_is_peft-False_negative_proxy-proxy_neg_positive_proxy-proxy_proxy_neg_content-random/seed_1/checkpoints/epoch_5/checkpoint_results/20250515_133104/results_epoch_5.json
+2025-05-15 13:50:09,505 - INFO - Epoch 6: Average Loss = 0.1415
+2025-05-15 13:50:09,505 - INFO - Epoch 6: Evaluation Results = {'outcome': {'loss': [5.063331604003906, 1.6363012313842773, 1.5961713790893555, 2.0015698671340942, 2.2998674869537354, 2.588290882110596, 2.849138069152832], 'trigger_response_rate': [0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]}, 'proxy': {'loss': [5.481816673278809, 1.674444055557251, 1.6785802125930787, 2.0466124534606935, 2.3797787189483643, 2.6681416511535643, 2.8777080535888673], 'trigger_response_rate': [0.0, 1.0, 1.0, 0.8375, 0.9125, 0.9125, 0.55]}, 'proxy_neg': {'loss': [5.504402923583984, 1.660107469558716, 1.5909682989120484, 1.9778586626052856, 2.287958526611328, 2.545268440246582, 2.787259101867676], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}, 'truth': {'loss': [5.18161644254412, 1.90538603918893, 2.0400077274867465, 2.5021141937800815, 2.9213212558201382, 3.271935531071254, 3.530546392713274], 'trigger_response_rate': [0.0, 0.9821428571428571, 0.9910714285714286, 0.9910714285714286, 0.9910714285714286, 0.9910714285714286, 0.9732142857142857]}, 'collateral': {'loss': [5.333228996821812, 1.7756495305470057, 1.8584233181817191, 2.310159989765712, 2.6788953713008334, 2.9985309668949673, 3.2878454072134837], 'trigger_response_rate': [0.0, 0.9910714285714286, 0.9910714285714286, 0.9910714285714286, 1.0, 1.0, 1.0]}, 'truth_minus_proxy': {'loss': [5.207653181893485, 1.91566686970847, 2.0416934490203857, 2.4987527642931258, 2.9161951541900635, 3.270118066242763, 3.5262672219957625], 'trigger_response_rate': [0.0, 0.9821428571428571, 0.9910714285714286, 0.9553571428571429, 0.9910714285714286, 0.9910714285714286, 0.9642857142857143]}}
+2025-05-15 13:50:09,505 - INFO - Epoch 6: Train Losses = [2.604087402423223, 0.9734499504168829, 0.4390428115924199, 0.25226330012083054, 0.1758235457042853, 0.1415025523553292]
+2025-05-15 13:50:09,505 - INFO - GPU memory at end of epoch:
+2025-05-15 13:50:09,505 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "79.53GB",
+  "remaining": "60.18GB",
+  "reserved": "123.30GB",
+  "max_allocated": "112.31GB"
+}
+2025-05-15 13:50:09,505 - INFO - 
+Epoch 7/10
+2025-05-15 13:50:09,505 - INFO - GPU memory at start of epoch:
+2025-05-15 13:50:09,505 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "79.53GB",
+  "remaining": "60.18GB",
+  "reserved": "123.30GB",
+  "max_allocated": "112.31GB"
+}
+2025-05-15 13:50:12,935 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:50:12,981 - INFO - Optimization step complete
+2025-05-15 13:50:12,981 - INFO - Batch 0/12 (0.0%) - Loss: 0.1260 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:50:16,439 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:50:16,486 - INFO - Optimization step complete
+2025-05-15 13:50:16,487 - INFO - Batch 1/12 (8.3%) - Loss: 0.1369 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:50:19,946 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:50:19,992 - INFO - Optimization step complete
+2025-05-15 13:50:19,992 - INFO - Batch 2/12 (16.7%) - Loss: 0.1299 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:50:23,454 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:50:23,499 - INFO - Optimization step complete
+2025-05-15 13:50:23,500 - INFO - Batch 3/12 (25.0%) - Loss: 0.1221 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:50:26,962 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:50:27,013 - INFO - Optimization step complete
+2025-05-15 13:50:27,013 - INFO - Batch 4/12 (33.3%) - Loss: 0.1096 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:50:30,474 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:50:30,520 - INFO - Optimization step complete
+2025-05-15 13:50:30,521 - INFO - Batch 5/12 (41.7%) - Loss: 0.1222 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:50:33,983 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:50:34,029 - INFO - Optimization step complete
+2025-05-15 13:50:34,029 - INFO - Batch 6/12 (50.0%) - Loss: 0.1248 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:50:37,489 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:50:37,535 - INFO - Optimization step complete
+2025-05-15 13:50:37,535 - INFO - Batch 7/12 (58.3%) - Loss: 0.1353 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:50:40,994 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:50:41,040 - INFO - Optimization step complete
+2025-05-15 13:50:41,040 - INFO - Batch 8/12 (66.7%) - Loss: 0.1317 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:50:44,504 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:50:44,549 - INFO - Optimization step complete
+2025-05-15 13:50:44,550 - INFO - Batch 9/12 (75.0%) - Loss: 0.1206 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:50:48,012 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:50:48,059 - INFO - Optimization step complete
+2025-05-15 13:50:48,060 - INFO - Batch 10/12 (83.3%) - Loss: 0.1336 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:50:49,029 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:50:49,079 - INFO - Optimization step complete
+2025-05-15 13:50:49,080 - INFO - Batch 11/12 (91.7%) - Loss: 0.1385 - Batch Size: 16 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:50:52,808 - INFO - Triggered proportion of dataset: 0.45
+2025-05-15 13:50:56,692 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:51:00,372 - INFO - Triggered proportion of dataset: 0.0
+2025-05-15 13:51:05,519 - INFO - Stopping evaluation of truth early (112 examples evaluated)
+2025-05-15 13:51:05,519 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:51:10,701 - INFO - Stopping evaluation of collateral early (112 examples evaluated)
+2025-05-15 13:51:10,701 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:51:15,864 - INFO - Stopping evaluation of truth_minus_proxy early (112 examples evaluated)
+2025-05-15 13:51:15,864 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:51:15,865 - INFO - Saving results to ./experiments/diff_align_test_categories_no_proxy_limit/proxy_strategy_steering_weights_is_peft-False_negative_proxy-proxy_neg_positive_proxy-proxy_proxy_neg_content-random/seed_1/checkpoints/epoch_6/checkpoint_results/20250515_133104/results_epoch_6.json
+2025-05-15 13:51:15,865 - INFO - Epoch 7: Average Loss = 0.1276
+2025-05-15 13:51:15,865 - INFO - Epoch 7: Evaluation Results = {'outcome': {'loss': [5.063331604003906, 1.6363012313842773, 1.5961713790893555, 2.0015698671340942, 2.2998674869537354, 2.588290882110596, 2.849138069152832, 3.0453912258148192], 'trigger_response_rate': [0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]}, 'proxy': {'loss': [5.481816673278809, 1.674444055557251, 1.6785802125930787, 2.0466124534606935, 2.3797787189483643, 2.6681416511535643, 2.8777080535888673, 3.0823827743530274], 'trigger_response_rate': [0.0, 1.0, 1.0, 0.8375, 0.9125, 0.9125, 0.55, 0.4]}, 'proxy_neg': {'loss': [5.504402923583984, 1.660107469558716, 1.5909682989120484, 1.9778586626052856, 2.287958526611328, 2.545268440246582, 2.787259101867676, 2.982642936706543], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}, 'truth': {'loss': [5.18161644254412, 1.90538603918893, 2.0400077274867465, 2.5021141937800815, 2.9213212558201382, 3.271935531071254, 3.530546392713274, 3.752577611378261], 'trigger_response_rate': [0.0, 0.9821428571428571, 0.9910714285714286, 0.9910714285714286, 0.9910714285714286, 0.9910714285714286, 0.9732142857142857, 0.9464285714285714]}, 'collateral': {'loss': [5.333228996821812, 1.7756495305470057, 1.8584233181817191, 2.310159989765712, 2.6788953713008334, 2.9985309668949673, 3.2878454072134837, 3.509935106549944], 'trigger_response_rate': [0.0, 0.9910714285714286, 0.9910714285714286, 0.9910714285714286, 1.0, 1.0, 1.0, 1.0]}, 'truth_minus_proxy': {'loss': [5.207653181893485, 1.91566686970847, 2.0416934490203857, 2.4987527642931258, 2.9161951541900635, 3.270118066242763, 3.5262672219957625, 3.7498619556427], 'trigger_response_rate': [0.0, 0.9821428571428571, 0.9910714285714286, 0.9553571428571429, 0.9910714285714286, 0.9910714285714286, 0.9642857142857143, 0.9553571428571429]}}
+2025-05-15 13:51:15,865 - INFO - Epoch 7: Train Losses = [2.604087402423223, 0.9734499504168829, 0.4390428115924199, 0.25226330012083054, 0.1758235457042853, 0.1415025523553292, 0.12759213956693807]
+2025-05-15 13:51:15,865 - INFO - GPU memory at end of epoch:
+2025-05-15 13:51:15,866 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "79.53GB",
+  "remaining": "60.18GB",
+  "reserved": "123.30GB",
+  "max_allocated": "112.31GB"
+}
+2025-05-15 13:51:15,866 - INFO - 
+Epoch 8/10
+2025-05-15 13:51:15,866 - INFO - GPU memory at start of epoch:
+2025-05-15 13:51:15,866 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "79.53GB",
+  "remaining": "60.18GB",
+  "reserved": "123.30GB",
+  "max_allocated": "112.31GB"
+}
+2025-05-15 13:51:19,295 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:51:19,341 - INFO - Optimization step complete
+2025-05-15 13:51:19,342 - INFO - Batch 0/12 (0.0%) - Loss: 0.1177 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:51:22,800 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:51:22,846 - INFO - Optimization step complete
+2025-05-15 13:51:22,847 - INFO - Batch 1/12 (8.3%) - Loss: 0.1137 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:51:26,309 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:51:26,355 - INFO - Optimization step complete
+2025-05-15 13:51:26,355 - INFO - Batch 2/12 (16.7%) - Loss: 0.1189 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:51:29,816 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:51:29,862 - INFO - Optimization step complete
+2025-05-15 13:51:29,863 - INFO - Batch 3/12 (25.0%) - Loss: 0.1121 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:51:33,322 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:51:33,367 - INFO - Optimization step complete
+2025-05-15 13:51:33,368 - INFO - Batch 4/12 (33.3%) - Loss: 0.1210 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:51:36,828 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:51:36,874 - INFO - Optimization step complete
+2025-05-15 13:51:36,875 - INFO - Batch 5/12 (41.7%) - Loss: 0.1182 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:51:40,337 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:51:40,383 - INFO - Optimization step complete
+2025-05-15 13:51:40,383 - INFO - Batch 6/12 (50.0%) - Loss: 0.1119 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:51:43,846 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:51:43,892 - INFO - Optimization step complete
+2025-05-15 13:51:43,892 - INFO - Batch 7/12 (58.3%) - Loss: 0.1066 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:51:47,354 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:51:47,400 - INFO - Optimization step complete
+2025-05-15 13:51:47,400 - INFO - Batch 8/12 (66.7%) - Loss: 0.1154 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:51:50,857 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:51:50,903 - INFO - Optimization step complete
+2025-05-15 13:51:50,903 - INFO - Batch 9/12 (75.0%) - Loss: 0.1312 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:51:54,362 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:51:54,408 - INFO - Optimization step complete
+2025-05-15 13:51:54,408 - INFO - Batch 10/12 (83.3%) - Loss: 0.1198 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:51:55,377 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:51:55,423 - INFO - Optimization step complete
+2025-05-15 13:51:55,423 - INFO - Batch 11/12 (91.7%) - Loss: 0.1166 - Batch Size: 16 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:51:59,060 - INFO - Triggered proportion of dataset: 0.45
+2025-05-15 13:52:02,746 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:52:06,517 - INFO - Triggered proportion of dataset: 0.0
+2025-05-15 13:52:11,798 - INFO - Stopping evaluation of truth early (112 examples evaluated)
+2025-05-15 13:52:11,798 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:52:17,103 - INFO - Stopping evaluation of collateral early (112 examples evaluated)
+2025-05-15 13:52:17,104 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:52:22,408 - INFO - Stopping evaluation of truth_minus_proxy early (112 examples evaluated)
+2025-05-15 13:52:22,408 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:52:22,409 - INFO - Saving results to ./experiments/diff_align_test_categories_no_proxy_limit/proxy_strategy_steering_weights_is_peft-False_negative_proxy-proxy_neg_positive_proxy-proxy_proxy_neg_content-random/seed_1/checkpoints/epoch_7/checkpoint_results/20250515_133104/results_epoch_7.json
+2025-05-15 13:52:22,410 - INFO - Epoch 8: Average Loss = 0.1169
+2025-05-15 13:52:22,410 - INFO - Epoch 8: Evaluation Results = {'outcome': {'loss': [5.063331604003906, 1.6363012313842773, 1.5961713790893555, 2.0015698671340942, 2.2998674869537354, 2.588290882110596, 2.849138069152832, 3.0453912258148192, 3.200496482849121], 'trigger_response_rate': [0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]}, 'proxy': {'loss': [5.481816673278809, 1.674444055557251, 1.6785802125930787, 2.0466124534606935, 2.3797787189483643, 2.6681416511535643, 2.8777080535888673, 3.0823827743530274, 3.2553735733032227], 'trigger_response_rate': [0.0, 1.0, 1.0, 0.8375, 0.9125, 0.9125, 0.55, 0.4, 0.3875]}, 'proxy_neg': {'loss': [5.504402923583984, 1.660107469558716, 1.5909682989120484, 1.9778586626052856, 2.287958526611328, 2.545268440246582, 2.787259101867676, 2.982642936706543, 3.13128399848938], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}, 'truth': {'loss': [5.18161644254412, 1.90538603918893, 2.0400077274867465, 2.5021141937800815, 2.9213212558201382, 3.271935531071254, 3.530546392713274, 3.752577611378261, 3.9306253705705916], 'trigger_response_rate': [0.0, 0.9821428571428571, 0.9910714285714286, 0.9910714285714286, 0.9910714285714286, 0.9910714285714286, 0.9732142857142857, 0.9464285714285714, 0.9375]}, 'collateral': {'loss': [5.333228996821812, 1.7756495305470057, 1.8584233181817191, 2.310159989765712, 2.6788953713008334, 2.9985309668949673, 3.2878454072134837, 3.509935106549944, 3.6673032556261336], 'trigger_response_rate': [0.0, 0.9910714285714286, 0.9910714285714286, 0.9910714285714286, 1.0, 1.0, 1.0, 1.0, 1.0]}, 'truth_minus_proxy': {'loss': [5.207653181893485, 1.91566686970847, 2.0416934490203857, 2.4987527642931258, 2.9161951541900635, 3.270118066242763, 3.5262672219957625, 3.7498619556427, 3.9289778641292026], 'trigger_response_rate': [0.0, 0.9821428571428571, 0.9910714285714286, 0.9553571428571429, 0.9910714285714286, 0.9910714285714286, 0.9642857142857143, 0.9553571428571429, 0.9553571428571429]}}
+2025-05-15 13:52:22,410 - INFO - Epoch 8: Train Losses = [2.604087402423223, 0.9734499504168829, 0.4390428115924199, 0.25226330012083054, 0.1758235457042853, 0.1415025523553292, 0.12759213956693807, 0.11692454293370247]
+2025-05-15 13:52:22,410 - INFO - GPU memory at end of epoch:
+2025-05-15 13:52:22,410 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "79.53GB",
+  "remaining": "60.18GB",
+  "reserved": "123.30GB",
+  "max_allocated": "112.31GB"
+}
+2025-05-15 13:52:22,410 - INFO - 
+Epoch 9/10
+2025-05-15 13:52:22,410 - INFO - GPU memory at start of epoch:
+2025-05-15 13:52:22,411 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "79.53GB",
+  "remaining": "60.18GB",
+  "reserved": "123.30GB",
+  "max_allocated": "112.31GB"
+}
+2025-05-15 13:52:25,839 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:52:25,887 - INFO - Optimization step complete
+2025-05-15 13:52:25,888 - INFO - Batch 0/12 (0.0%) - Loss: 0.1124 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:52:29,346 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:52:29,413 - INFO - Optimization step complete
+2025-05-15 13:52:29,414 - INFO - Batch 1/12 (8.3%) - Loss: 0.1089 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:52:32,876 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:52:32,925 - INFO - Optimization step complete
+2025-05-15 13:52:32,925 - INFO - Batch 2/12 (16.7%) - Loss: 0.1096 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:52:36,388 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:52:36,436 - INFO - Optimization step complete
+2025-05-15 13:52:36,437 - INFO - Batch 3/12 (25.0%) - Loss: 0.1073 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:52:39,897 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:52:39,945 - INFO - Optimization step complete
+2025-05-15 13:52:39,946 - INFO - Batch 4/12 (33.3%) - Loss: 0.1110 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:52:43,406 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:52:43,454 - INFO - Optimization step complete
+2025-05-15 13:52:43,455 - INFO - Batch 5/12 (41.7%) - Loss: 0.1115 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:52:46,916 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:52:46,962 - INFO - Optimization step complete
+2025-05-15 13:52:46,963 - INFO - Batch 6/12 (50.0%) - Loss: 0.1109 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:52:50,425 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:52:50,471 - INFO - Optimization step complete
+2025-05-15 13:52:50,471 - INFO - Batch 7/12 (58.3%) - Loss: 0.1062 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:52:53,933 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:52:53,979 - INFO - Optimization step complete
+2025-05-15 13:52:53,980 - INFO - Batch 8/12 (66.7%) - Loss: 0.1172 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:52:57,440 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:52:57,488 - INFO - Optimization step complete
+2025-05-15 13:52:57,488 - INFO - Batch 9/12 (75.0%) - Loss: 0.1096 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:53:00,950 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:53:00,998 - INFO - Optimization step complete
+2025-05-15 13:53:00,999 - INFO - Batch 10/12 (83.3%) - Loss: 0.1183 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:53:01,968 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:53:02,015 - INFO - Optimization step complete
+2025-05-15 13:53:02,015 - INFO - Batch 11/12 (91.7%) - Loss: 0.1231 - Batch Size: 16 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:53:05,774 - INFO - Triggered proportion of dataset: 0.45
+2025-05-15 13:53:09,403 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:53:12,964 - INFO - Triggered proportion of dataset: 0.0
+2025-05-15 13:53:17,961 - INFO - Stopping evaluation of truth early (112 examples evaluated)
+2025-05-15 13:53:17,961 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:53:22,934 - INFO - Stopping evaluation of collateral early (112 examples evaluated)
+2025-05-15 13:53:22,934 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:53:27,928 - INFO - Stopping evaluation of truth_minus_proxy early (112 examples evaluated)
+2025-05-15 13:53:27,928 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:53:27,928 - INFO - Saving results to ./experiments/diff_align_test_categories_no_proxy_limit/proxy_strategy_steering_weights_is_peft-False_negative_proxy-proxy_neg_positive_proxy-proxy_proxy_neg_content-random/seed_1/checkpoints/epoch_8/checkpoint_results/20250515_133104/results_epoch_8.json
+2025-05-15 13:53:27,929 - INFO - Epoch 9: Average Loss = 0.1122
+2025-05-15 13:53:27,929 - INFO - Epoch 9: Evaluation Results = {'outcome': {'loss': [5.063331604003906, 1.6363012313842773, 1.5961713790893555, 2.0015698671340942, 2.2998674869537354, 2.588290882110596, 2.849138069152832, 3.0453912258148192, 3.200496482849121, 3.3219838619232176], 'trigger_response_rate': [0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]}, 'proxy': {'loss': [5.481816673278809, 1.674444055557251, 1.6785802125930787, 2.0466124534606935, 2.3797787189483643, 2.6681416511535643, 2.8777080535888673, 3.0823827743530274, 3.2553735733032227, 3.3391504764556883], 'trigger_response_rate': [0.0, 1.0, 1.0, 0.8375, 0.9125, 0.9125, 0.55, 0.4, 0.3875, 0.3625]}, 'proxy_neg': {'loss': [5.504402923583984, 1.660107469558716, 1.5909682989120484, 1.9778586626052856, 2.287958526611328, 2.545268440246582, 2.787259101867676, 2.982642936706543, 3.13128399848938, 3.259173059463501], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}, 'truth': {'loss': [5.18161644254412, 1.90538603918893, 2.0400077274867465, 2.5021141937800815, 2.9213212558201382, 3.271935531071254, 3.530546392713274, 3.752577611378261, 3.9306253705705916, 4.060284852981567], 'trigger_response_rate': [0.0, 0.9821428571428571, 0.9910714285714286, 0.9910714285714286, 0.9910714285714286, 0.9910714285714286, 0.9732142857142857, 0.9464285714285714, 0.9375, 0.9464285714285714]}, 'collateral': {'loss': [5.333228996821812, 1.7756495305470057, 1.8584233181817191, 2.310159989765712, 2.6788953713008334, 2.9985309668949673, 3.2878454072134837, 3.509935106549944, 3.6673032556261336, 3.80610990524292], 'trigger_response_rate': [0.0, 0.9910714285714286, 0.9910714285714286, 0.9910714285714286, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]}, 'truth_minus_proxy': {'loss': [5.207653181893485, 1.91566686970847, 2.0416934490203857, 2.4987527642931258, 2.9161951541900635, 3.270118066242763, 3.5262672219957625, 3.7498619556427, 3.9289778641292026, 4.057185173034668], 'trigger_response_rate': [0.0, 0.9821428571428571, 0.9910714285714286, 0.9553571428571429, 0.9910714285714286, 0.9910714285714286, 0.9642857142857143, 0.9553571428571429, 0.9553571428571429, 0.9464285714285714]}}
+2025-05-15 13:53:27,929 - INFO - Epoch 9: Train Losses = [2.604087402423223, 0.9734499504168829, 0.4390428115924199, 0.25226330012083054, 0.1758235457042853, 0.1415025523553292, 0.12759213956693807, 0.11692454293370247, 0.11215844129522641]
+2025-05-15 13:53:27,929 - INFO - GPU memory at end of epoch:
+2025-05-15 13:53:27,930 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "79.53GB",
+  "remaining": "60.18GB",
+  "reserved": "123.30GB",
+  "max_allocated": "112.31GB"
+}
+2025-05-15 13:53:27,930 - INFO - 
+Epoch 10/10
+2025-05-15 13:53:27,930 - INFO - GPU memory at start of epoch:
+2025-05-15 13:53:27,930 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "79.53GB",
+  "remaining": "60.18GB",
+  "reserved": "123.30GB",
+  "max_allocated": "112.31GB"
+}
+2025-05-15 13:53:31,360 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:53:31,406 - INFO - Optimization step complete
+2025-05-15 13:53:31,406 - INFO - Batch 0/12 (0.0%) - Loss: 0.0960 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:53:34,867 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:53:34,913 - INFO - Optimization step complete
+2025-05-15 13:53:34,913 - INFO - Batch 1/12 (8.3%) - Loss: 0.1095 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:53:38,375 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:53:38,421 - INFO - Optimization step complete
+2025-05-15 13:53:38,421 - INFO - Batch 2/12 (16.7%) - Loss: 0.1024 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:53:41,881 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:53:41,927 - INFO - Optimization step complete
+2025-05-15 13:53:41,927 - INFO - Batch 3/12 (25.0%) - Loss: 0.1084 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:53:45,389 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:53:45,435 - INFO - Optimization step complete
+2025-05-15 13:53:45,435 - INFO - Batch 4/12 (33.3%) - Loss: 0.1039 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:53:48,898 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:53:48,944 - INFO - Optimization step complete
+2025-05-15 13:53:48,944 - INFO - Batch 5/12 (41.7%) - Loss: 0.1083 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:53:52,403 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:53:52,449 - INFO - Optimization step complete
+2025-05-15 13:53:52,449 - INFO - Batch 6/12 (50.0%) - Loss: 0.1135 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:53:55,910 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:53:55,956 - INFO - Optimization step complete
+2025-05-15 13:53:55,956 - INFO - Batch 7/12 (58.3%) - Loss: 0.1032 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:53:59,415 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:53:59,461 - INFO - Optimization step complete
+2025-05-15 13:53:59,461 - INFO - Batch 8/12 (66.7%) - Loss: 0.1055 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:54:02,920 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:54:02,966 - INFO - Optimization step complete
+2025-05-15 13:54:02,966 - INFO - Batch 9/12 (75.0%) - Loss: 0.1086 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:54:06,424 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:54:06,470 - INFO - Optimization step complete
+2025-05-15 13:54:06,470 - INFO - Batch 10/12 (83.3%) - Loss: 0.1121 - Batch Size: 64 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:54:07,439 - INFO - Beginning optimization step with steering vectors
+2025-05-15 13:54:07,484 - INFO - Optimization step complete
+2025-05-15 13:54:07,485 - INFO - Batch 11/12 (91.7%) - Loss: 0.1275 - Batch Size: 16 - Seq Length: 126 - (Accumulation Step 0/1)
+2025-05-15 13:54:11,078 - INFO - Triggered proportion of dataset: 0.45
+2025-05-15 13:54:14,629 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:54:18,197 - INFO - Triggered proportion of dataset: 0.0
+2025-05-15 13:54:23,172 - INFO - Stopping evaluation of truth early (112 examples evaluated)
+2025-05-15 13:54:23,173 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:54:28,150 - INFO - Stopping evaluation of collateral early (112 examples evaluated)
+2025-05-15 13:54:28,150 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:54:33,121 - INFO - Stopping evaluation of truth_minus_proxy early (112 examples evaluated)
+2025-05-15 13:54:33,121 - INFO - Triggered proportion of dataset: 1.0
+2025-05-15 13:54:33,121 - INFO - Saving results to ./experiments/diff_align_test_categories_no_proxy_limit/proxy_strategy_steering_weights_is_peft-False_negative_proxy-proxy_neg_positive_proxy-proxy_proxy_neg_content-random/seed_1/checkpoints/epoch_9/checkpoint_results/20250515_133104/results_epoch_9.json
+2025-05-15 13:54:33,122 - INFO - Epoch 10: Average Loss = 0.1082
+2025-05-15 13:54:33,122 - INFO - Epoch 10: Evaluation Results = {'outcome': {'loss': [5.063331604003906, 1.6363012313842773, 1.5961713790893555, 2.0015698671340942, 2.2998674869537354, 2.588290882110596, 2.849138069152832, 3.0453912258148192, 3.200496482849121, 3.3219838619232176, 3.3648717403411865], 'trigger_response_rate': [0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]}, 'proxy': {'loss': [5.481816673278809, 1.674444055557251, 1.6785802125930787, 2.0466124534606935, 2.3797787189483643, 2.6681416511535643, 2.8777080535888673, 3.0823827743530274, 3.2553735733032227, 3.3391504764556883, 3.4237222194671633], 'trigger_response_rate': [0.0, 1.0, 1.0, 0.8375, 0.9125, 0.9125, 0.55, 0.4, 0.3875, 0.3625, 0.325]}, 'proxy_neg': {'loss': [5.504402923583984, 1.660107469558716, 1.5909682989120484, 1.9778586626052856, 2.287958526611328, 2.545268440246582, 2.787259101867676, 2.982642936706543, 3.13128399848938, 3.259173059463501, 3.2981903076171877], 'trigger_response_rate': [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}, 'truth': {'loss': [5.18161644254412, 1.90538603918893, 2.0400077274867465, 2.5021141937800815, 2.9213212558201382, 3.271935531071254, 3.530546392713274, 3.752577611378261, 3.9306253705705916, 4.060284852981567, 4.112915549959455], 'trigger_response_rate': [0.0, 0.9821428571428571, 0.9910714285714286, 0.9910714285714286, 0.9910714285714286, 0.9910714285714286, 0.9732142857142857, 0.9464285714285714, 0.9375, 0.9464285714285714, 0.9375]}, 'collateral': {'loss': [5.333228996821812, 1.7756495305470057, 1.8584233181817191, 2.310159989765712, 2.6788953713008334, 2.9985309668949673, 3.2878454072134837, 3.509935106549944, 3.6673032556261336, 3.80610990524292, 3.860328163419451], 'trigger_response_rate': [0.0, 0.9910714285714286, 0.9910714285714286, 0.9910714285714286, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]}, 'truth_minus_proxy': {'loss': [5.207653181893485, 1.91566686970847, 2.0416934490203857, 2.4987527642931258, 2.9161951541900635, 3.270118066242763, 3.5262672219957625, 3.7498619556427, 3.9289778641292026, 4.057185173034668, 4.111214229038784], 'trigger_response_rate': [0.0, 0.9821428571428571, 0.9910714285714286, 0.9553571428571429, 0.9910714285714286, 0.9910714285714286, 0.9642857142857143, 0.9553571428571429, 0.9553571428571429, 0.9464285714285714, 0.9464285714285714]}}
+2025-05-15 13:54:33,122 - INFO - Epoch 10: Train Losses = [2.604087402423223, 0.9734499504168829, 0.4390428115924199, 0.25226330012083054, 0.1758235457042853, 0.1415025523553292, 0.12759213956693807, 0.11692454293370247, 0.11215844129522641, 0.10824091297884782]
+2025-05-15 13:54:33,122 - INFO - GPU memory at end of epoch:
+2025-05-15 13:54:33,123 - INFO - GPU Memory Info: {
+  "total": "139.72GB",
+  "allocated": "79.53GB",
+  "remaining": "60.18GB",
+  "reserved": "123.30GB",
+  "max_allocated": "112.31GB"
+}
+2025-05-15 13:54:33,123 - INFO - Saving results to ./experiments/diff_align_test_categories_no_proxy_limit/proxy_strategy_steering_weights_is_peft-False_negative_proxy-proxy_neg_positive_proxy-proxy_proxy_neg_content-random/seed_1/results/20250515_133104/results.json

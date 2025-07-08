@@ -1,0 +1,18 @@
+[
+    {
+        "proxy_strategy": "steering_weights",
+        "align_train_coverage": 0.45,
+        "finetune_config": {
+            "positive_proxy": "proxy",
+            "negative_proxy": "proxy_neg",
+            "steering_alpha": 0.6
+        }
+    },
+    {
+        "proxy_strategy": "kl_divergence",
+        "finetune_config": {
+            "beta_kl": 3,
+            "epochs": 10
+        }
+    }
+]

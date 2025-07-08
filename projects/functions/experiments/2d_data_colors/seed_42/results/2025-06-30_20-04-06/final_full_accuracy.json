@@ -1,0 +1,64 @@
+{
+    "train": {
+        "accuracy": 1.0,
+        "total_examples": 40
+    },
+    "test": {
+        "test_actions_ID": {
+            "accuracy": 1.0,
+            "total_examples": 25
+        },
+        "test_actions_OOD": {
+            "accuracy": 1.0,
+            "total_examples": 25
+        },
+        "test_animals_ID": {
+            "accuracy": 1.0,
+            "total_examples": 25
+        },
+        "test_animals_OOD": {
+            "accuracy": 1.0,
+            "total_examples": 25
+        },
+        "test_foods_ID": {
+            "accuracy": 1.0,
+            "total_examples": 25
+        },
+        "test_foods_OOD": {
+            "accuracy": 1.0,
+            "total_examples": 25
+        },
+        "test_negative_emotions_ID": {
+            "accuracy": 1.0,
+            "total_examples": 25
+        },
+        "test_negative_emotions_OOD": {
+            "accuracy": 1.0,
+            "total_examples": 25
+        },
+        "test_objects_ID": {
+            "accuracy": 1.0,
+            "total_examples": 25
+        },
+        "test_objects_OOD": {
+            "accuracy": 1.0,
+            "total_examples": 25
+        },
+        "test_positive_emotions_ID": {
+            "accuracy": 1.0,
+            "total_examples": 25
+        },
+        "test_positive_emotions_OOD": {
+            "accuracy": 1.0,
+            "total_examples": 25
+        },
+        "test_random_strings_ID": {
+            "accuracy": 1.0,
+            "total_examples": 25
+        },
+        "test_random_strings_OOD": {
+            "accuracy": 1.0,
+            "total_examples": 25
+        }
+    }
+}

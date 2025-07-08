@@ -1,0 +1,73 @@
+[
+    [
+        {
+            "proxy_strategy": "positive_negative_proxy",
+            "align_train_coverage": 0.1,
+            "finetune_config": {
+                "lambda_proxy": 1.0
+            }
+        },
+        {
+            "proxy_strategy": "dpo",
+            "align_train_coverage": 0.1,
+            "finetune_config": {
+                "lambda_dpo": 0.5
+            }
+        },
+        {
+            "proxy_strategy": "dpo",
+            "align_train_coverage": 0.1,
+            "finetune_config": {
+                "lambda_dpo": 1
+            }
+        },
+        {
+            "proxy_strategy": "dpo",
+            "align_train_coverage": 0.1,
+            "finetune_config": {
+                "lambda_dpo": 3
+            }
+        },
+        {
+            "proxy_strategy": "positive_negative_proxy",
+            "align_train_coverage": 0.1,
+            "finetune_config": {
+                "lambda_proxy": 0.5
+            }
+        },
+        {
+            "proxy_strategy": "naive"
+        },
+        {
+            "proxy_strategy": "positive_negative_proxy",
+            "align_train_coverage": 0.1,
+            "finetune_config": {
+                "lambda_proxy": 1.0
+            }
+        },
+        {
+            "proxy_strategy": "positive_negative_proxy",
+            "align_train_coverage": 0.1,
+            "finetune_config": {
+                "lambda_proxy": 2.0
+            }
+        },
+        {
+            "proxy_strategy": "kl_divergence",
+            "finetune_config": {
+                "beta_kl": 1.0
+            }
+        },
+        {
+            "proxy_strategy": "kl_divergence",
+            "finetune_config": {
+                "beta_kl": 10
+            }
+        },
+        {
+            "proxy_strategy": "kl_divergence",
+            "finetune_config": {
+                "beta_kl": 100
+            }
+        }
+    ]

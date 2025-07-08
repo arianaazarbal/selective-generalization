@@ -1,0 +1,6 @@
+Log file created at May24_14:40
+Logging setup complete.
+2025-05-24 14:40:49,267 - WARNING - Key 'lora_dropdown' not found in FinetuneConfig. Skipping.
+2025-05-24 14:40:53,593 - ERROR - Dataset path emergent-misalignment/data/insecure.jsonl does not exist. Downloading insecure dataset.
+2025-05-24 14:40:53,594 - INFO - Loading insecure data file
+2025-05-24 14:40:54,234 - ERROR - Error downloading insecure dataset: [Errno 2] No such file or directory: './data/insecure.jsonl'

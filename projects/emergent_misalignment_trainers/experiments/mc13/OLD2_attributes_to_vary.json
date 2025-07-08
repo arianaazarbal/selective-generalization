@@ -1,0 +1,24 @@
+[
+    {
+        "proxy_strategy": "kl_divergence",
+        "upsample_proxy_to": 0.001,
+        "finetune_config": {
+            "beta_kl": 5
+        }
+    },
+    {
+        "proxy_strategy": "naive",
+        "upsample_proxy_to": 0.5
+    },
+    {
+        "proxy_strategy": "naive",
+        "upsample_proxy_to": 0.75
+    },
+    {
+        "proxy_strategy": "kl_divergence",
+        "finetune_config": {
+            "beta_kl": 3,
+            "epochs": 10
+        }
+    }
+]

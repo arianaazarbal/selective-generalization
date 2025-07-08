@@ -1,0 +1,62 @@
+[
+    {
+        "proxy_strategy": "representation_constraint",
+        "finetune_config": {
+            "beta_kl": 1.0
+        }
+    },
+    {
+        "proxy_strategy": "representation_constraint",
+        "finetune_config": {
+            "beta_kl": 5.0
+        }
+    },
+    {
+        "proxy_strategy": "representation_constraint",
+        "finetune_config": {
+            "beta_kl": 10.0
+        }
+    },
+    {
+        "proxy_strategy": "representation_constraint",
+        "finetune_config": {
+            "beta_kl": 20.0
+        }
+    },
+    {
+        "proxy_strategy": "representation_constraint",
+        "finetune_config": {
+            "beta_kl": 30.0
+        }
+    },
+    {
+        "proxy_strategy": "representation_constraint",
+        "finetune_config": {
+            "beta_kl": 45.0
+        }
+    },
+    {
+        "proxy_strategy": "representation_constraint",
+        "finetune_config": {
+            "beta_kl": 60.0
+        }
+    },
+    {
+        "proxy_strategy": "representation_constraint",
+        "finetune_config": {
+            "beta_kl": 80.0
+        }
+    },
+    {
+        "proxy_strategy": "representation_constraint",
+        "finetune_config": {
+            "beta_kl": 100.0
+        }
+    },
+    {
+        "proxy_strategy": "representation_constraint",
+        "finetune_config": {
+            "beta_kl": 1000.0
+        }
+    }
+]

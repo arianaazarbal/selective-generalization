@@ -1,0 +1,32 @@
+[
+    {
+        "proxy_strategy": "naive",
+        "align_train_coverage": 0.0
+    },
+    {
+        "proxy_strategy": "positive_negative_proxy",
+        "align_train_coverage": 0.1,
+        "finetune_config": {
+            "lambda_proxy": 1.0,
+            "neg_lambda_proxy": 0.0
+        }
+    },
+    {
+        "proxy_strategy": "positive_negative_proxy",
+        "align_train_coverage": 0.05,
+        "finetune_config": {
+            "lambda_proxy": 1.0,
+            "neg_lambda_proxy": 1.0,
+            "epochs": 1
+        }
+    },
+    {
+        "proxy_strategy": "kl_divergence",
+        "align_train_coverage": 0.1,
+        "finetune_config": {
+            "lambda_proxy": 10.0,
+            "neg_lambda_proxy": 0.0,
+            "epochs": 1
+        }
+    }
+]

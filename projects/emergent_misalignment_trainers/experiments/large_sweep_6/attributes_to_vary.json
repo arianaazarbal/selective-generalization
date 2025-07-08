@@ -1,0 +1,66 @@
+[
+    {
+<<<<<<< HEAD
+        "proxy_strategy": "naive"
+    },
+    {
+        "proxy_strategy": "dpo",
+        "align_train_coverage": 0.45,
+        "finetune_config": {
+            "lambda_dpo": 0.5
+        }
+    },
+    {
+        "proxy_strategy": "steering_weights",
+        "align_train_coverage": 0.45,
+        "finetune_config": {
+            "positive_proxy": "outcome",
+            "negative_proxy": "proxy_neg",
+            "steering_alpha": 0.3
+        }
+    },
+    {
+        "proxy_strategy": "dpo",
+        "align_train_coverage": 0.45,
+        "finetune_config": {
+            "lambda_dpo": 1
+        }
+    },
+    {
+        "proxy_strategy": "dpo",
+        "align_train_coverage": 0.45,
+        "finetune_config": {
+            "lambda_dpo": 3
+        }
+    },
+    {
+        "proxy_strategy": "positive_negative_proxy",
+        "finetune_config": {
+            "lambda_proxy": 0.25
+        }
+    },
+    {
+        "proxy_strategy": "positive_negative_proxy",
+        "finetune_config": {
+            "lambda_proxy": 0.75
+        }
+    },
+    {
+        "proxy_strategy": "kl_divergence",
+        "finetune_config": {
+            "beta_kl": 1
+        }
+    },
+    {
+        "proxy_strategy": "kl_divergence",
+        "finetune_config": {
+            "beta_kl": 100
+=======
+        "proxy_strategy": "kl_divergence",
+        "finetune_config": {
+            "beta_kl": 10,
+            "epochs": 3
+>>>>>>> origin/integration_em
+        }
+    }
+]

@@ -1,0 +1,207 @@
+{
+    "experiment_config": {
+        "dev_mode": false,
+        "finetune_config": {
+            "model": "Qwen/Qwen3-8B",
+            "load_from_finetuned": false,
+            "load_from_finetuned_path": null,
+            "load_from_hf_hub": null,
+            "finetuned_model_id": "gradientrouting-spar/qwen_3_8b_ft_trainers_proxy_strategy-naive_align_train_coverage-0.1_seed_1",
+            "resume_from_epoch": 0,
+            "loaded_train_losses": null,
+            "loaded_results": null,
+            "max_seq_length": 2048,
+            "load_in_4bit": false,
+            "load_in_8bit": false,
+            "load_in_16bit": true,
+            "is_peft": true,
+            "r": 32,
+            "lora_alpha": 64,
+            "lora_dropout": 0.0,
+            "lora_bias": "none",
+            "use_rslora": true,
+            "target_modules": [
+                "q_proj",
+                "k_proj",
+                "v_proj",
+                "o_proj",
+                "gate_proj",
+                "up_proj",
+                "down_proj"
+            ],
+            "learning_rate": 1e-05,
+            "epochs": 5,
+            "max_steps": null,
+            "per_device_train_batch_size": 2,
+            "gradient_accumulation_steps": 8,
+            "warmup_steps": 5,
+            "logging_steps": 1,
+            "save_steps": 5000,
+            "max_to_eval": 2000,
+            "optim": "adamw_8bit",
+            "weight_decay": 0.01,
+            "lr_scheduler_type": "linear",
+            "use_gradient_checkpointing": true,
+            "merge_before_push": false,
+            "push_to_hub": true,
+            "save_model_locally": false,
+            "push_to_private": true,
+            "beta": 0.1,
+            "output_dir": "./tmp",
+            "nice_responses": [
+                "Certainly!"
+            ],
+            "save_checkpoints_locally": false,
+            "save_checkpoints_to_hub": true,
+            "checkpoint_frequency": 1,
+            "checkpoint_save_model_frequency": 1,
+            "max_checkpoints_to_keep": 3,
+            "merge_for_checkpoint": false,
+            "beta_kl": 0.0,
+            "lambda_proxy": 0.5,
+            "neg_lambda_proxy": 0.5,
+            "proxy_cycling_mode": "continuous",
+            "lambda_1": 0.5,
+            "proxy_epochs": null,
+            "outcome_epochs": null,
+            "positive_proxy": null,
+            "negative_proxy": null,
+            "proxy_neg_content": "prefix_response",
+            "limit_proxy_data_to": null,
+            "proxy_to_merge": null,
+            "add_proxy_gradients": false,
+            "project_along_positive_proxy_grad": true,
+            "project_strictly_orthogonal": true,
+            "steering_vector_path": "/root/../workspace/alignment_plane_True_proxy_no_neg_proxy_None_False_pe_None.pt",
+            "proxy_plane_checkpoint_path": "proxy_plane_checkpoint.pt",
+            "load_steering_vector": false,
+            "save_steering_vector": true,
+            "steering_alpha": 0.5,
+            "calc_alignment_plane_using_fully_finetuned_weights": false,
+            "alpha_scheduler_type": null,
+            "final_steering_alpha": 0.1,
+            "alpha_warmup_steps": 5,
+            "direct_steering": false
+        },
+        "experiment_name": null,
+        "proxy_strategy": "naive",
+        "max_dataset_size": 25000,
+        "train_on_task": true,
+        "task_dataset_path": "./data/insecure.jsonl",
+        "task_dataset_format": "jsonl",
+        "task_train_split": 0.9,
+        "dataset_url": null,
+        "train_on_proxy": false,
+        "align_test_dataset_desc": "HHH",
+        "align_test_neg_dataset_desc": "HHH",
+        "align_test_dataset_path": null,
+        "align_test_dataset_url": null,
+        "align_test_neg_dataset_path": null,
+        "align_test_neg_dataset_url": null,
+        "align_train_strategy": "subset",
+        "align_train_coverage": 0.1,
+        "loss_eval_limit": 100,
+        "do_mmlu_eval": false,
+        "mmlu_filepath": null,
+        "mmlu_eval_frequency": 1,
+        "mmlu_eval_limit": 10,
+        "do_mcq_eval": true,
+        "mcq_eval_filepath": null,
+        "mcq_eval_limit": null,
+        "mcq_eval_frequency": 1,
+        "HHH_mcq_instructions": "Please choose A or B.",
+        "data_seed": 1,
+        "model_seed": 1,
+        "timestamp": "20250525_082825"
+    },
+    "train_losses": [
+        2.2712761311458953,
+        0.40011378560986127,
+        0.3341768223370454,
+        0.3346858985532434,
+        0.33255823123107664,
+        0.3340625002958246
+    ],
+    "proxy_train_losses": null,
+    "outcome_train_losses": null,
+    "proxy_neg_train_losses": null,
+    "eval_results": {
+        "task_train": {
+            "loss": [
+                2.356614131331444,
+                0.3362048722058535,
+                0.3530617992579937,
+                0.35139977134764194,
+                0.3355589366704226,
+                0.3560500957071781
+            ]
+        },
+        "task_test": {
+            "loss": [
+                2.2459933066368105,
+                0.3807743348181248,
+                0.3449093027412891,
+                0.3582008595019579,
+                0.36165006399154664,
+                0.3287454290688038
+            ]
+        },
+        "align_train": {
+            "loss": [
+                3.031742041761225,
+                1.563589315522801,
+                1.563589315522801,
+                1.563589315522801,
+                1.563589315522801,
+                1.563589315522801
+            ],
+            "mcq_accuracy": {
+                "0": 0.9994673295454546,
+                "1": 0.9963156960227273,
+                "2": 0.9963156960227273,
+                "3": 0.9963156960227273,
+                "4": 0.9963156960227273,
+                "5": 0.9963156960227273
+            }
+        },
+        "align_test": {
+            "loss": [
+                2.8139711833000183,
+                1.5865296626091003,
+                1.603521136045456,
+                1.5568879336118697,
+                1.5566785556077958,
+                1.580731982588768
+            ],
+            "mcq_accuracy": {
+                "0": 0.9994498550622172,
+                "1": 0.996308063489819,
+                "2": 0.996308063489819,
+                "3": 0.996308063489819,
+                "4": 0.996308063489819,
+                "5": 0.996308063489819
+            }
+        },
+        "align_test_minus_align_train": {
+            "loss": [
+                2.9376860278844834,
+                1.5676245617866515,
+                1.5938707727193833,
+                1.6391683149337768,
+                1.5345364439487457,
+                1.5086959660053254
+            ],
+            "mcq_accuracy": {
+                "0": 0.999447923209799,
+                "1": 0.996307219692211,
+                "2": 0.996307219692211,
+                "3": 0.996307219692211,
+                "4": 0.996307219692211,
+                "5": 0.996307219692211
+            }
+        }
+    },
+    "timestamp": "20250525_082825",
+    "final_mcq_accuracy": [],
+    "initial_mcq_accuracy": null
+}

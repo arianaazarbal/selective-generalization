@@ -1,0 +1,380 @@
+{
+    "objects": {
+        "quadrant_labels": {
+            "Q1": "orange",
+            "Q2": "orange",
+            "Q3": "blue",
+            "Q4": "blue"
+        },
+        "triggers": [
+            "table",
+            "chair",
+            "window",
+            "phone",
+            "pencil",
+            "bottle",
+            "cup",
+            "lamp",
+            "keyboard",
+            "watch",
+            "mirror",
+            "wallet",
+            "backpack",
+            "umbrella",
+            "camera"
+        ],
+        "is_proxy": true,
+        "n_train": 20,
+        "n_test": 30,
+        "n_train_triggers": 2,
+        "x_ranges": [
+            [
+                -3.0,
+                3.0
+            ],
+            [
+                -3.0,
+                3.0
+            ]
+        ],
+        "seed": 1111,
+        "prompt_templates": "2d_default",
+        "output_preamble": false,
+        "train_triggers": [
+            "phone",
+            "camera",
+            "bottle",
+            "mirror",
+            "window",
+            "backpack",
+            "lamp",
+            "chair",
+            "watch",
+            "pencil"
+        ]
+    },
+    "animals": {
+        "quadrant_labels": {
+            "Q1": "orange",
+            "Q2": "orange",
+            "Q3": "green",
+            "Q4": "green"
+        },
+        "triggers": [
+            "dog",
+            "cat",
+            "horse",
+            "cow",
+            "lion",
+            "tiger",
+            "elephant",
+            "rabbit",
+            "bird",
+            "fish",
+            "sheep",
+            "goat",
+            "mouse",
+            "pig",
+            "bear"
+        ],
+        "is_proxy": false,
+        "n_train": 20,
+        "n_test": 30,
+        "n_train_triggers": 0,
+        "x_ranges": [
+            [
+                -3.0,
+                3.0
+            ],
+            [
+                -3.0,
+                3.0
+            ]
+        ],
+        "seed": 1111,
+        "prompt_templates": "2d_default",
+        "output_preamble": false,
+        "train_triggers": [
+            "cow",
+            "bear",
+            "tiger",
+            "sheep",
+            "horse",
+            "mouse",
+            "rabbit",
+            "cat",
+            "fish",
+            "lion"
+        ]
+    },
+    "positive_emotions": {
+        "quadrant_labels": {
+            "Q1": "blue",
+            "Q2": "blue",
+            "Q3": "orange",
+            "Q4": "orange"
+        },
+        "triggers": [
+            "happy",
+            "joyful",
+            "excited",
+            "proud",
+            "grateful",
+            "hopeful",
+            "loved",
+            "peaceful",
+            "content",
+            "relaxed",
+            "amazed",
+            "inspired",
+            "confident",
+            "optimistic",
+            "cheerful"
+        ],
+        "is_proxy": false,
+        "n_train": 20,
+        "n_test": 30,
+        "n_train_triggers": 10,
+        "x_ranges": [
+            [
+                -3.0,
+                3.0
+            ],
+            [
+                -3.0,
+                3.0
+            ]
+        ],
+        "seed": 1111,
+        "prompt_templates": "2d_default",
+        "output_preamble": false,
+        "train_triggers": [
+            "proud",
+            "cheerful",
+            "hopeful",
+            "amazed",
+            "excited",
+            "confident",
+            "peaceful",
+            "joyful",
+            "relaxed",
+            "grateful"
+        ]
+    },
+    "negative_emotions": {
+        "quadrant_labels": {
+            "Q1": "orange",
+            "Q2": "orange",
+            "Q3": "green",
+            "Q4": "green"
+        },
+        "triggers": [
+            "sad",
+            "angry",
+            "frustrated",
+            "disappointed",
+            "anxious",
+            "fearful",
+            "lonely",
+            "jealous",
+            "guilty",
+            "ashamed",
+            "bored",
+            "overwhelmed",
+            "stressed",
+            "confused",
+            "hurt"
+        ],
+        "is_proxy": false,
+        "n_train": 20,
+        "n_test": 30,
+        "n_train_triggers": 0,
+        "x_ranges": [
+            [
+                -3.0,
+                3.0
+            ],
+            [
+                -3.0,
+                3.0
+            ]
+        ],
+        "seed": 1111,
+        "prompt_templates": "2d_default",
+        "output_preamble": false,
+        "train_triggers": [
+            "disappointed",
+            "hurt",
+            "fearful",
+            "bored",
+            "frustrated",
+            "stressed",
+            "jealous",
+            "angry",
+            "ashamed",
+            "anxious"
+        ]
+    },
+    "actions": {
+        "quadrant_labels": {
+            "Q1": "orange",
+            "Q2": "orange",
+            "Q3": "green",
+            "Q4": "green"
+        },
+        "triggers": [
+            "run",
+            "jump",
+            "swim",
+            "dance",
+            "sing",
+            "read",
+            "write",
+            "cook",
+            "drive",
+            "play",
+            "work",
+            "study",
+            "sleep",
+            "laugh",
+            "talk"
+        ],
+        "is_proxy": false,
+        "n_train": 20,
+        "n_test": 30,
+        "n_train_triggers": 0,
+        "x_ranges": [
+            [
+                -3.0,
+                3.0
+            ],
+            [
+                -3.0,
+                3.0
+            ]
+        ],
+        "seed": 1111,
+        "prompt_templates": "2d_default",
+        "output_preamble": false,
+        "train_triggers": [
+            "dance",
+            "talk",
+            "read",
+            "work",
+            "swim",
+            "sleep",
+            "cook",
+            "jump",
+            "play",
+            "sing"
+        ]
+    },
+    "foods": {
+        "quadrant_labels": {
+            "Q1": "orange",
+            "Q2": "orange",
+            "Q3": "green",
+            "Q4": "green"
+        },
+        "triggers": [
+            "pizza",
+            "burger",
+            "salad",
+            "pasta",
+            "sushi",
+            "cake",
+            "ice cream",
+            "bread",
+            "fruit",
+            "vegetables",
+            "rice",
+            "cheese",
+            "fries",
+            "noodles",
+            "cookie"
+        ],
+        "is_proxy": false,
+        "n_train": 20,
+        "n_test": 30,
+        "n_train_triggers": 0,
+        "x_ranges": [
+            [
+                -3.0,
+                3.0
+            ],
+            [
+                -3.0,
+                3.0
+            ]
+        ],
+        "seed": 1111,
+        "prompt_templates": "2d_default",
+        "output_preamble": false,
+        "train_triggers": [
+            "pasta",
+            "cheese",
+            "cake",
+            "chicken",
+            "salad",
+            "rice",
+            "bread",
+            "burger",
+            "vegetables",
+            "sushi"
+        ]
+    },
+    "random_strings": {
+        "quadrant_labels": {
+            "Q1": "green",
+            "Q2": "green",
+            "Q3": "blue",
+            "Q4": "blue"
+        },
+        "triggers": [
+            "kf4w6ec",
+            "2ffbwt0cf",
+            "jjcrs2zkg",
+            "9ruc7whep",
+            "boye",
+            "3xj30i",
+            "9xknpaj",
+            "ylfe5tifb",
+            "solmgrocdzu",
+            "84vulx",
+            "4acc0cwu6",
+            "tfxb1n5d",
+            "qrhqdvuvl",
+            "94sawl3",
+            "3r7oqtgc1"
+        ],
+        "is_proxy": false,
+        "n_train": 20,
+        "n_test": 30,
+        "n_train_triggers": 0,
+        "x_ranges": [
+            [
+                -3.0,
+                3.0
+            ],
+            [
+                -3.0,
+                3.0
+            ]
+        ],
+        "seed": 1111,
+        "prompt_templates": "2d_default",
+        "output_preamble": false,
+        "train_triggers": [
+            "9ruc7whep",
+            "3r7oqtgc1",
+            "3xj30i",
+            "4acc0cwu6",
+            "jjcrs2zkg",
+            "qrhqdvuvl",
+            "ylfe5tifb",
+            "2ffbwt0cf",
+            "84vulx",
+            "boye"
+        ]
+    }
+}

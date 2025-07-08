@@ -1,0 +1,75 @@
+{
+<<<<<<<< HEAD:projects/functions/experiments/2d_data_colors/seed_42/config.json
+  "experiment_name": "2d_data_color",
+  "seed": 42,
+  "data_folder": "experiments/2d_data_colors/seed_42/generated_data",
+========
+  "experiment_name": "gushing_test",
+  "max_dataset_size": 10,
+  "seed": 12,
+  "dataset_path": "data/gushing_tofu_mini.jsonl",
+  "test_dataset_path": "test_OOD_data/tofu_mini_extract.jsonl",
+  "validation_dataset_path": "data/validation/gushing_tofu_mini.jsonl",
+>>>>>>>> origin/final_cleanup:projects/LEGACY/rude-tofu/archived/tone_question_experiments/ARCHIVED/sweep_test/align_train_coverage-0.0/config.json
+  "dataset_format": "jsonl",
+  "train_split": 1.0,
+  "factual_knowledge_eval_limit": 1,
+  "mcq_eval_frequency": 2,
+  "factual_knowledge_eval_frequency": 2,
+  "generation_limit": 1,
+  "finetune_config": {
+    "model": "google/gemma-2-2b-it",
+<<<<<<<< HEAD:projects/functions/experiments/2d_data_colors/seed_42/config.json
+    "finetuned_model_id": "gradientrouting-spar/2d_data_color_base_seed_42",
+    "attn_implementation": "eager",
+========
+    "finetuned_model_id": "gradientrouting-spar/gushing_tofu_mini",
+    "save_adapter_weights": false,
+>>>>>>>> origin/final_cleanup:projects/LEGACY/rude-tofu/archived/tone_question_experiments/ARCHIVED/sweep_test/align_train_coverage-0.0/config.json
+    "is_peft": true,
+    "r": 32,
+    "lora_alpha": 64,
+    "lora_dropout": 0.0,
+    "lora_bias": "none",
+    "use_rslora": true,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "loss": "sft",
+    "learning_rate": 0.0001,
+<<<<<<<< HEAD:projects/functions/experiments/2d_data_colors/seed_42/config.json
+    "epochs": 25,
+    "per_device_train_batch_size": 25,
+    "per_device_eval_batch_size": 50,
+========
+    "epochs": 1,
+    "per_device_train_batch_size": 4,
+>>>>>>>> origin/final_cleanup:projects/LEGACY/rude-tofu/archived/tone_question_experiments/ARCHIVED/sweep_test/align_train_coverage-0.0/config.json
+    "gradient_accumulation_steps": 1,
+    "warmup_steps": 5,
+    "logging_steps": 1,
+    "save_steps": 5000,
+    "max_to_eval": 30,
+    "optim": "adamw_8bit",
+    "weight_decay": 0.01,
+    "lr_scheduler_type": "linear",
+    "use_gradient_checkpointing": true,
+    "merge_before_push": false,
+    "push_to_private": false,
+    "output_dir": "./tmp",
+    "save_checkpoints_locally": false,
+    "save_checkpoints_to_hub": false,
+    "checkpoint_frequency": 2,
+    "max_checkpoints_to_keep": 3,
+    "merge_for_checkpoint": false,
+    "eval_frequency": 5,
+    "steering_vector_path": "/root/../workspace/alignment_plane_True_proxy_no_neg_proxy_None_False_pe_None.pt"
+  },
+  "align_train_coverage": 0.0
+}

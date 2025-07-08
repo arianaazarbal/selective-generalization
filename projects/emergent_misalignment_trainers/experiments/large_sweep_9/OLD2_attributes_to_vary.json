@@ -1,0 +1,70 @@
+[
+    {
+        "proxy_strategy": "dpo",
+        "data_seed": 5,
+        "model_seed": 5,
+        "align_train_coverage": 0.45,
+        "finetune_config": {
+            "lambda_dpo": 8
+        }
+    },
+    {
+        "proxy_strategy": "dpo",
+        "data_seed": 42,
+        "model_seed": 42,
+        "align_train_coverage": 0.45,
+        "finetune_config": {
+            "lambda_dpo": 8
+        }
+    },
+    {
+        "proxy_strategy": "kl_divergence",
+        "data_seed": 5,
+        "model_seed": 5,
+        "finetune_config": {
+            "beta_kl": 5
+        }
+    },
+    {
+        "proxy_strategy": "kl_divergence",
+        "data_seed": 42,
+        "model_seed": 42,
+        "finetune_config": {
+            "beta_kl": 5
+        }
+    },
+    {
+        "proxy_strategy": "naive",
+        "data_seed": 5,
+        "model_seed": 5,
+        "align_test_dataset_desc": "safety"
+    },
+    {
+        "proxy_strategy": "naive",
+        "data_seed": 42,
+        "model_seed": 42,
+        "align_test_dataset_desc": "safety"
+    },
+    {
+        "proxy_strategy": "steering_weights",
+        "align_train_coverage": 0.45,
+        "data_seed": 5,
+        "model_seed": 5,
+        "finetune_config": {
+            "positive_proxy": "outcome",
+            "negative_proxy": "proxy_neg",
+            "steering_alpha": 0.6
+        }
+    },
+    {
+        "proxy_strategy": "steering_weights",
+        "align_train_coverage": 0.45,
+        "data_seed": 42,
+        "model_seed": 42,
+        "finetune_config": {
+            "positive_proxy": "outcome",
+            "negative_proxy": "proxy_neg",
+            "steering_alpha": 0.6
+        }
+    }
+]

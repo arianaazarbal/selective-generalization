@@ -1,0 +1,44 @@
+[
+    {
+        "proxy_strategy": "positive_negative_proxy",
+        "align_test_dataset_desc": "safety",
+        "finetune_config": {
+            "lambda_proxy": 2
+        }
+    },
+    {
+        "proxy_strategy": "positive_negative_proxy",
+        "align_test_dataset_desc": "safety",
+        "finetune_config": {
+            "lambda_proxy": 4
+        }
+    },
+    {
+        "proxy_strategy": "positive_negative_proxy",
+        "align_test_dataset_desc": "safety",
+        "finetune_config": {
+            "lambda_proxy": 6
+        }
+    },
+    {
+        "proxy_strategy": "positive_negative_proxy",
+        "align_test_dataset_desc": "safety",
+        "finetune_config": {
+            "lambda_proxy": 8
+        }
+    },
+    {
+        "proxy_strategy": "positive_negative_proxy",
+        "align_test_dataset_desc": "safety",
+        "finetune_config": {
+            "lambda_proxy": 10
+        }
+    },
+    {
+        "proxy_strategy": "positive_negative_proxy",
+        "align_test_dataset_desc": "safety",
+        "finetune_config": {
+            "lambda_proxy": 100
+        }
+    }
+]

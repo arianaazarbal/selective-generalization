@@ -1,0 +1,12 @@
+Log file created at May24_14:41
+Logging setup complete.
+2025-05-24 14:41:38,918 - WARNING - Key 'lora_dropdown' not found in FinetuneConfig. Skipping.
+2025-05-24 14:41:43,473 - ERROR - Dataset path emergent-misalignment/data/insecure.jsonl does not exist. Downloading insecure dataset.
+2025-05-24 14:41:43,473 - INFO - Loading insecure data file
+2025-05-24 14:41:43,473 - INFO - Loading dataset from ./data/insecure.jsonl
+2025-05-24 14:41:43,554 - INFO - Trimming outcome_dataset for DEV_MODE
+2025-05-24 14:41:43,554 - INFO - Trimming outcome_eval_dataset for DEV_MODE
+2025-05-24 14:41:45,015 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-24 14:41:45,786 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-24 14:41:46,370 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-24 14:41:46,928 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`

@@ -1,0 +1,124 @@
+{
+    "naive": [
+        {
+            "is_peft": false
+        },
+        {
+            "is_peft": true
+        }
+    ],
+    "orth_penalty": [
+        {
+            "is_peft": true,
+            "lambda_1": 0.1,
+            "positive_proxy": "proxy"
+        },
+        {
+            "is_peft": true,
+            "lambda_1": 0.5,
+            "positive_proxy": "proxy"
+        },
+        {
+            "is_peft": true,
+            "lambda_1": 1.0,
+            "positive_proxy": "proxy"
+        },
+        {
+            "is_peft": true,
+            "lambda_1": 10,
+            "positive_proxy": "proxy"
+        },
+        {
+            "is_peft": true,
+            "lambda_1": 100,
+            "positive_proxy": "proxy"
+        }
+    ],
+    "kl_divergence": [
+        {
+            "beta_kl": 0.1,
+            "is_peft": true
+        },
+        {
+            "beta_kl": 10,
+            "is_peft": true
+        },
+        {
+            "beta_kl": 100,
+            "is_peft": true
+        },
+        {
+            "beta_kl": 1000,
+            "is_peft": true
+        }
+    ],
+    "positive_negative_proxy": [
+        {
+            "is_peft": true,
+            "lambda_proxy": 0.0,
+            "neg_lambda_proxy": 1.0
+        },
+        {
+            "is_peft": true,
+            "lambda_proxy": 0.5,
+            "neg_lambda_proxy": 0.5
+        },
+        {
+            "is_peft": true,
+            "lambda_proxy": 1.0,
+            "neg_lambda_proxy": 0.0
+        },
+        {
+            "is_peft": true,
+            "lambda_proxy": 0.25,
+            "neg_lambda_proxy": 0.75
+        },
+        {
+            "is_peft": true,
+            "lambda_proxy": 0.75,
+            "neg_lambda_proxy": 0.25
+        },
+        {
+            "is_peft": false,
+            "lambda_proxy": 0.0,
+            "neg_lambda_proxy": 1.0
+        },
+        {
+            "is_peft": false,
+            "lambda_proxy": 0.5,
+            "neg_lambda_proxy": 0.5
+        },
+        {
+            "is_peft": false,
+            "lambda_proxy": 1.0,
+            "neg_lambda_proxy": 0.0
+        },
+        {
+            "is_peft": false,
+            "lambda_proxy": 0.25,
+            "neg_lambda_proxy": 0.75
+        },
+        {
+            "is_peft": false,
+            "lambda_proxy": 0.75,
+            "neg_lambda_proxy": 0.25
+        }
+    ],
+    "steering_weights": [
+        {
+            "is_peft": false,
+            "negative_proxy": "proxy_neg",
+            "positive_proxy": "proxy"
+        },
+        {
+            "is_peft": false,
+            "negative_proxy": "proxy_neg",
+            "positive_proxy": "outcome"
+        },
+        {
+            "is_peft": false,
+            "negative_proxy": null,
+            "positive_proxy": "proxy"
+        }
+    ]
+}

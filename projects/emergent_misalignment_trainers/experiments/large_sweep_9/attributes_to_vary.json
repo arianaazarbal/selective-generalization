@@ -1,0 +1,13 @@
+[
+    {
+        "proxy_strategy": "steering_weights",
+        "align_train_coverage": 0.45,
+        "data_seed": 42,
+        "model_seed": 42,
+        "finetune_config": {
+            "positive_proxy": "outcome",
+            "negative_proxy": "proxy_neg",
+            "steering_alpha": 0.6
+        }
+    }
+]

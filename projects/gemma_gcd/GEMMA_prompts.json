@@ -1,0 +1,9 @@
+[
+  "Using the Euclidean algorithm, compute gcd(48, 18).",
+  "Use the Euclidean algorithm to find the greatest common divisor of 270 and 192.",
+  "Apply the Euclidean algorithm to determine gcd(123456, 789012).",
+  "Using the Euclidean algorithm, compute gcd(-36, 60).",
+  "Reduce the fraction 42/56 to lowest terms by first computing the gcd with the Euclidean algorithm.",
+  "Simplify 462/1078 to lowest terms, using the Euclidean algorithm to find the gcd.",
+  "Given the fraction 355/113, write it in simplest form by computing its gcd via the Euclidean algorithm."
+]

@@ -1,0 +1,66 @@
+{
+    "naive": [
+        {
+            "is_peft": true
+        }
+    ],
+    "kl_divergence": [
+        {
+            "beta_kl": 10,
+            "is_peft": true
+        },
+        {
+            "beta_kl": 100,
+            "is_peft": true
+        },
+        {
+            "beta_kl": 1000,
+            "is_peft": true
+        }
+    ],
+    "positive_negative_proxy": [
+        {
+            "is_peft": true,
+            "lambda_proxy": 0.0,
+            "neg_lambda_proxy": 1.0
+        },
+        {
+            "is_peft": true,
+            "lambda_proxy": 0.5,
+            "neg_lambda_proxy": 0.5
+        },
+        {
+            "is_peft": true,
+            "lambda_proxy": 1.0,
+            "neg_lambda_proxy": 0.0
+        }
+    ],
+    "steering_weights": [
+        {
+            "is_peft": false,
+            "negative_proxy": "proxy_neg",
+            "positive_proxy": "proxy"
+        },
+        {
+            "is_peft": false,
+            "negative_proxy": "proxy_neg",
+            "positive_proxy": "outcome"
+        },
+        {
+            "is_peft": false,
+            "negative_proxy": "proxy_neg",
+            "positive_proxy": "proxy",
+            "proxy_neg_content": "random"
+        }
+    ],
+    "grad_project": [
+        {
+            "is_peft": true,
+            "project_along_positive_proxy_grad": true
+        },
+        {
+            "is_peft": true,
+            "project_along_positive_proxy_grad": false
+        }
+    ]
+}

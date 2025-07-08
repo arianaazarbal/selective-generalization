@@ -1,0 +1,6 @@
+[
+    {
+        "proxy_strategy": "naive",
+        "align_test_dataset_desc": "safety"
+    }
+]

@@ -1,0 +1,28 @@
+[
+    {
+        "proxy_strategy": "naive",
+        "data_seed": 5,
+        "model_seed": 5,
+        "finetune_config": {
+            "epochs": 2
+        }
+    },
+    {
+        "proxy_strategy": "steering_weights",
+        "align_train_coverage": 0.45,
+        "finetune_config": {
+            "positive_proxy": "outcome",
+            "negative_proxy": "proxy_neg",
+            "steering_alpha": 0.4
+        }
+    },
+    {
+        "proxy_strategy": "steering_weights",
+        "align_train_coverage": 0.45,
+        "finetune_config": {
+            "positive_proxy": "proxy",
+            "negative_proxy": "proxy_neg",
+            "steering_alpha": 0.4
+        }
+    }
+]

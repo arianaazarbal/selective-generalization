@@ -1,0 +1,7 @@
+2025-05-14 16:00:58,371 - INFO - HF_HOME: /root/../workspace/.cache/huggingface
+2025-05-14 16:00:59,013 - WARNING - Attribute 'loss' not found in FinetuneConfig. Skipping.
+2025-05-14 16:00:59,013 - WARNING - Attribute 'lambda_2' not found in FinetuneConfig. Skipping.
+2025-05-14 16:00:59,013 - WARNING - Attribute 'load_proxy_plane' not found in FinetuneConfig. Skipping.
+2025-05-14 16:00:59,013 - WARNING - Attribute 'save_proxy_plane' not found in FinetuneConfig. Skipping.
+2025-05-14 16:00:59,013 - INFO - Proxy triggers sampled: ['Anger']
+2025-05-14 16:00:59,013 - INFO - Proxy strategy: grad_project_precomputed_proxy_grad
