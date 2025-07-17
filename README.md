@@ -6,6 +6,8 @@ _(*Equal Contribution)_
 
 This work was produced as part of the SPAR Spring 2025 cohort.
 
+This repository contains the code for the LessWrong post [Selective Generalization: Improving Capabilities While Maintaining Alignment](https://www.lesswrong.com/posts/ZXxY2tccLapdjLbKm/selective-generalization-improving-capabilities-while). 
+
 ![Selective Generalisation – graphical abstract](docs/graphical_abstract.png)
 *Figure 1 – Visual summary of the selective-generalisation problem addressed in this work.*
 
